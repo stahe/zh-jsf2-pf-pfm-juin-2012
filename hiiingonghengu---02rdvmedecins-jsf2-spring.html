@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -470,7 +472,7 @@
   <a href="#412-exceptions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.2. [exceptions] 包
+        4.1.2. [exceptions]
       
     </span>
   </a>
@@ -503,7 +505,7 @@
   <a href="#415-jpa" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.5. 配置 [JPA] 层
+        4.1.5. [JPA] 层的配置
       
     </span>
   </a>
@@ -514,7 +516,7 @@
   <a href="#416-spring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.6. Spring 配置文件
+        4.1.6. Spring配置文件
       
     </span>
   </a>
@@ -525,7 +527,7 @@
   <a href="#417-junit" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.7. JUnit 测试类
+        4.1.7. 测试类 JUnit
       
     </span>
   </a>
@@ -538,15 +540,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42" class="md-nav__link">
+  <a href="#42-metier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2. [业务]层
+        4.2. [métier]层
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.2. [业务]层">
+    <nav class="md-nav" aria-label="4.2. [métier]层">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -564,7 +566,7 @@
   <a href="#422" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.2. 项目依赖项
+        4.2.2. 项目的依赖项
       
     </span>
   </a>
@@ -575,7 +577,7 @@
   <a href="#423-spring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.3. Spring 配置文件
+        4.2.3. Spring配置文件
       
     </span>
   </a>
@@ -583,10 +585,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#424" class="md-nav__link">
+  <a href="#424-metier" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2.4. 测试 [业务] 层
+        4.2.4. [métier] 层的测试
       
     </span>
   </a>
@@ -602,12 +604,12 @@
   <a href="#43-web" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3. [Web] 层
+        4.3. [web]层
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.3. [Web] 层">
+    <nav class="md-nav" aria-label="4.3. [web]层">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -625,7 +627,7 @@
   <a href="#432" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3.2. 项目依赖关系
+        4.3.2. 项目的依赖关系
       
     </span>
   </a>
@@ -633,10 +635,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#433-jsfglassfish-jsftomcat" class="md-nav__link">
+  <a href="#433-jsf-glassfish-jsf-tomcat" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3.3. 将 JSF/GlassFish 项目移植到 JSF/Tomcat 项目
+        4.3.3. 将 JSF / Glassfish 项目迁移至 JSF / Tomcat 项目
       
     </span>
   </a>
@@ -647,7 +649,7 @@
   <a href="#434" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3.4. 对导入项目的修改
+        4.3.4. 导入项目的修改
       
     </span>
   </a>
@@ -658,7 +660,7 @@
   <a href="#435" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.3.5. 测试应用程序
+        4.3.5. 应用程序测试
       
     </span>
   </a>
@@ -685,7 +687,7 @@
   <a href="#45-eclipse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.5. 使用 Eclipse 进行测试
+        4.5. 使用Eclipse进行的测试
       
     </span>
   </a>
@@ -795,7 +797,7 @@
   <span class="md-ellipsis">
     
   
-    8. PrimeFaces Mobile 简介
+    8. Primefaces Mobile 简介
   
 
     
@@ -906,61 +908,61 @@
 
 
 
-<p><a id="refheading7741030114625"></a></p>
+<p><span id="refheading7741030114625" name="refheading7741030114625" class="odt-bookmark-anchor"></span></p>
 <h1 id="4-02rdvmedecins-jsf2-spring">4. <span style="color: #365f91">示例应用程序 – 02：rdvmedecins-jsf2-spring</span></h1>
-<p>现在，我们将把前一个应用程序移植到 Spring/Tomcat 环境中：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F10000011AC917007A.png" width="633" height="141" style="display:inline-block; margin:4px;width:16.736cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F10000011AC917007A.png" /></td></tr></table>
+<p>现在，我们将尝试将前一个应用程序移植到 Spring / Tomcat 环境中：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F10000011AC917007A.png" width="633" height="141" style="display:inline-block; margin:4px;width:16.736cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F10000011AC917007A.png" /></td></tr></table>
 
-<p>这确实是一个移植项目。我们将以之前的应用程序为基础，对其进行调整以适应新环境。本文仅对所做的修改进行说明。主要有三处改动：</p>
+<p>这实际上是一个移植过程。我们将基于前一个应用程序，并将其适配到新环境中。本文仅对修改部分进行说明。这些修改主要分为三类：</p>
 <ul>
-  <li>服务器不再是 GlassFish，而是 Tomcat——一款不带 EJB 容器的轻量级服务器，
+  <li>服务器不再是 Glassfish，而是 Tomcat——一个轻量级服务器，它不包含 EJB 容器，
   </li>
-  <li>为替代 EJB，我们将采用 Spring——EJB 的主要竞争对手 [http://www.springsource.com/]，
+  <li>为替代 EJB，我们将采用 Spring——EJB 和 [http://www.springsource.com/] 的主要竞争对手，
   </li>
-  <li>所使用的JPA实现将采用Hibernate，而非EclipseLink。
+  <li>将采用Hibernate替代EclipseLink作为实现方案。
   </li>
 </ul>
 
-<p>由于我们需要在新旧项目之间进行大量复制粘贴操作，因此将在 NetBeans 中保持旧项目处于打开状态：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000EE000000736E7F2A8E.png" width="167" height="81" style="display:inline-block; margin:4px;width:4.41cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EE000000736E7F2A8E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p>由于我们将大量在旧项目和新项目之间进行复制/粘贴操作，因此我们会在 NetBeans 中保持之前项目的打开状态：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000EE000000736E7F2A8E.png" width="167" height="81" style="display:inline-block; margin:4px;width:4.41cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EE000000736E7F2A8E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>使用 Spring 框架需要具备一定的知识，相关内容可参见 [<strong>ref7</strong>]（见<a href="#references-2"><u><span style="color: #0563c1">第 166 页</span></u></a>）。</p>
-<p><a id="refheading7741230114625"></a></p>
+<p>使用 Spring 框架需要一定的相关知识，这些内容可在 [<a href="https://stahe.github.io/zh-javaee-juin-2012/">ref7</a>] 中找到（参见第<a href="hiiingonghengu---01rdvmedecins-jsf2-ejb.html#references-2"><u><span style="color: #0563c1"> 166</span></u></a> 页）。</p>
+<p><span id="refheading7741230114625" name="refheading7741230114625" class="odt-bookmark-anchor"></span></p>
 <h2 id="41-dao-jpa">4.1. <span style="color: #4f81bd">[DAO] 和 [JPA] 层</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F10000011A8D28B2AC.png" width="633" height="141" style="display:inline-block; margin:4px;width:16.736cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F10000011A8D28B2AC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F10000011A8D28B2AC.png" width="633" height="141" style="display:inline-block; margin:4px;width:16.736cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F10000011A8D28B2AC.png" /></td></tr></table>
 
-<p><a id="refheading7741430114625"></a></p>
-<h3 id="411-netbeans">4.1.1. <span style="color: #4f81bd"><span style="color: #4f81bd">NetBeans 项目</span></span></h3>
-<p>我们正在构建一个类型为 [Java 应用程序] 的 Maven 项目：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C80000006A69281A45.png" width="140" height="74" style="display:inline-block; margin:4px;width:3.701cm;height:1.961cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C80000006A69281A45.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000015B000000999D9E79A3.png" width="243" height="107" style="display:inline-block; margin:4px;width:6.429cm;height:2.835cm;" class="odt-zoomable" data-zoom-src="images/100000000000015B000000999D9E79A3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000110000000ED402F07D8.png" width="190" height="166" style="display:inline-block; margin:4px;width:5.039cm;height:4.39cm;" class="odt-zoomable" data-zoom-src="images/1000000000000110000000ED402F07D8.png" /></td></tr></table>
+<p><span id="refheading7741430114625" name="refheading7741430114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="411-netbeans">4.1.1. <span style="color: #4f81bd">NetBeans 项目</span></h3>
+<p>我们正在构建一个类型为 [Java Application] 的 Maven 项目：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000C80000006A69281A45.png" width="140" height="74" style="display:inline-block; margin:4px;width:3.701cm;height:1.961cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C80000006A69281A45.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000015B000000999D9E79A3.png" width="243" height="107" style="display:inline-block; margin:4px;width:6.429cm;height:2.835cm;" class="odt-zoomable" data-zoom-src="images/100000000000015B000000999D9E79A3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000110000000ED402F07D8.png" width="190" height="166" style="display:inline-block; margin:4px;width:5.039cm;height:4.39cm;" class="odt-zoomable" data-zoom-src="images/1000000000000110000000ED402F07D8.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000330000001852F53B8DC.png" width="408" height="194" style="display:inline-block; margin:4px;width:10.795cm;height:5.145cm;" class="odt-zoomable" data-zoom-src="images/1000000000000330000001852F53B8DC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000330000001852F53B8DC.png" width="408" height="194" style="display:inline-block; margin:4px;width:10.795cm;height:5.145cm;" class="odt-zoomable" data-zoom-src="images/1000000000000330000001852F53B8DC.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，生成的项目，
+  <li>在 [1] 中，即创建的项目，
   </li>
-  <li>在 [2] 中，是同一项目，但删除了 [Source Packages] 和 [Test Packages]，同时也移除了 [junit-3.8.1] 依赖项。
+  <li>在 [2] 中，该项目去除了 [Source Packages] 和 [Test Packages] 包以及 [junit-3.8.1] 依赖项。
   </li>
 </ul>
 
-<p>Maven 项目中最困难的部分是找到正确的依赖项。对于这个 Spring / JPA / Hibernate 项目，它们如下所示：</p>
+<p>Maven 项目中最困难的部分是找到正确的依赖项。对于这个 Spring / JPA / Hibernate 项目，依赖项如下：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project</span> <span style="color:#7f007f">xmlns</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span style="color:#7f007f">xmlns:xsi</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f007f">xsi:schemaLocation</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">modelVersion</span><span style="color:#008080">&gt;</span><span style="color:#000000">4.0.0</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">modelVersion</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">istia.st</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mv-rdvmedecins-spring-dao-jpa</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">1.0-SNAPSHOT</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">packaging</span><span style="color:#008080">&gt;</span><span style="color:#000000">jar</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">packaging</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">name</span><span style="color:#008080">&gt;</span><span style="color:#000000">mv-rdvmedecins-spring-dao-jpa</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">name</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">url</span><span style="color:#008080">&gt;</span><span style="color:#000000">http://maven.apache.org</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">url</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &lt;url&gt;http://maven.apache.org&lt;/url&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">properties</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project.build.sourceEncoding</span><span style="color:#008080">&gt;</span><span style="color:#000000">UTF-8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">project.build.sourceEncoding</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">properties</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.hibernate</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
@@ -1021,95 +1023,95 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span><span style="color:#000000">jar</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">project</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
 <ul>
-  <li>第 18–29 行：针对 Hibernate，
+  <li>第 18-29 行：用于 Hibernate，
   </li>
-  <li>第 30–34 行：针对 MySQL JDBC 驱动程序，
+  <li>第 30-34 行：用于 MySQL 的 JDBC 驱动程序，
   </li>
-  <li>第 35–41 行：用于 JUnit 测试，
+  <li>第 35-41 行：用于测试 JUnit，
   </li>
-  <li>第 42–51 行：用于 Apache Commons DBCP 连接池。连接池是一组已打开的连接。当应用程序需要连接时，它会从池中请求一个；当不再需要时，则将其归还。 连接在应用程序启动时建立，并在应用程序生命周期内保持打开状态。这避免了反复打开和关闭连接带来的开销。GlassFish 中也存在此类连接池，但其使用对我们而言是透明的。此处情况亦然，但我们需要进行安装和配置，
+  <li>第 42-51 行：用于 Apache Commons 连接池 DBCP。连接池是一组已打开的连接。当应用程序需要连接时，它会向连接池请求；当不再需要时，则将其归还。 连接在应用程序启动时建立，并在应用程序生命周期内保持打开状态。这避免了反复建立/关闭连接带来的开销。Glassfish 中曾存在此类连接池，但其使用对我们而言是透明的。此处情况亦然，但我们需要自行安装并配置它，
   </li>
-  <li>第 52–75 行：针对 Spring。
-  </li>
-</ul>
-
-<p>让我们添加这些依赖项并构建项目：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000031E00000180595F3A74.png" width="399" height="192" style="display:inline-block; margin:4px;width:10.557cm;height:5.08cm;" class="odt-zoomable" data-zoom-src="images/100000000000031E00000180595F3A74.png" /></td></tr></table>
-
-<ul>
-  <li>在 [1] 中，我们构建项目，这将迫使 Maven 下载依赖项；
-  </li>
-  <li>在 [2] 中，这些依赖项随后会出现在 [Dependencies] 分支中。由于 Hibernate 和 Spring 框架本身就包含大量依赖项，因此数量相当庞大。同样，得益于 Maven，我们无需为此操心，它们会自动下载。
+  <li>第52-75行：针对Spring。
   </li>
 </ul>
 
-<p>现在依赖项已准备就绪，我们将 [dao] 层中的 EJB 项目代码粘贴到 Spring 项目的 [dao] 层中：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B60000013CD8A7F7BE.png" width="603" height="158" style="display:inline-block; margin:4px;width:15.954cm;height:4.18cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B60000013CD8A7F7BE.png" /></td></tr></table>
+<p>添加这些依赖项并构建项目：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000031E00000180595F3A74.png" width="399" height="192" style="display:inline-block; margin:4px;width:10.557cm;height:5.08cm;" class="odt-zoomable" data-zoom-src="images/100000000000031E00000180595F3A74.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，我们将代码复制到源项目，
+  <li>在 [1] 中构建项目，这将迫使 Maven 下载依赖项，
   </li>
-  <li>在 [2] 中，我们将内容粘贴到目标项目中，
+  <li>在 [2] 中，这些依赖项随后会出现在 [Dependencies] 分支中。它们数量众多，因为 Hibernate 和 Spring 框架本身就包含大量依赖项。不过，得益于 Maven，我们无需为此操心。它们会自动下载。
+  </li>
+</ul>
+
+<p>现在我们已获取了依赖项，将 [dao] 层中的 EJB 项目代码粘贴到 [dao] 层的 Spring 项目中：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004B60000013CD8A7F7BE.png" width="603" height="158" style="display:inline-block; margin:4px;width:15.954cm;height:4.18cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B60000013CD8A7F7BE.png" /></td></tr></table>
+
+<ul>
+  <li>在 [1] 中，复制到源项目，
+  </li>
+  <li>在 [2] 中，将其粘贴到目标项目中，
   </li>
   <li>在 [3] 中，显示结果。
   </li>
 </ul>
 
-<p>复制完成后，您需要修复错误。</p>
-<p><a id="refheading7741630114625"></a></p>
-<h3 id="412-exceptions">4.1.2. <span style="color: #4f81bd">[exceptions] 包</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E70000016CE2B22EDD.png" width="628" height="182" style="display:inline-block; margin:4px;width:16.603cm;height:4.815cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E70000016CE2B22EDD.png" /></td></tr></table>
+<p>复制完成后，需要修正错误。</p>
+<p><span id="refheading7741630114625" name="refheading7741630114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="412-exceptions">4.1.2. <span style="color: #4f81bd">[exceptions]</span></h3>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E70000016CE2B22EDD.png" width="628" height="182" style="display:inline-block; margin:4px;width:16.603cm;height:4.815cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E70000016CE2B22EDD.png" /></td></tr></table>
 
-<p>[RdvMedecinsExceptions] 类 [1] 存在错误，因为第 4 行中的 [javax] 包已不存在。这是一个 EJB 专用的包。第 6 行的错误源于第 4 行的错误。我们删除这两行代码。这样就解决了这些错误 [2]。</p>
-<p><a id="refheading7741830114625"></a></p>
-<h3 id="413-jpa">4.1.3. <span style="color: #4f81bd"><span style="color: #4f81bd">[jpa] 包</span></span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CA0000026A98808703.png" width="613" height="309" style="display:inline-block; margin:4px;width:16.219cm;height:8.176cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CA0000026A98808703.png" /></td></tr></table>
+<p>类 [RdvMedecinsExceptions] [1] 出现错误，原因是包 [javax] 的第 4 行已不存在。这是 EJB 专属的包。 第6行的错误源于第4行的错误。删除这两行。这将消除[2]的错误。</p>
+<p><span id="refheading7741830114625" name="refheading7741830114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="413-jpa">4.1.3. <span style="color: #4f81bd">[jpa] 包</span></h3>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004CA0000026A98808703.png" width="613" height="309" style="display:inline-block; margin:4px;width:16.219cm;height:8.176cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CA0000026A98808703.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，由于第 [5] 行缺少 validation 包，[Creneau] 类存在错误。我们本可以将该包添加到项目依赖中。但在测试过程中，Hibernate 因此抛出了异常。鉴于它对我们的应用程序并非必需，我们将其移除了。要修复该类，只需删除所有错误的行 [2]。我们对所有存在错误的类都进行此操作。
+  <li>在[1]中，由于缺少[5]行的验证包，导致[Creneau]类出现错误。 本可以将该包添加到项目的依赖中。但在测试时，Hibernate 因该包而抛出异常。由于它对我们的应用程序并非必需，因此我们将其移除。要修正该类，只需删除所有错误的 [2] 行。对所有出错的类都进行此操作。
   </li>
 </ul>
 
-<p><a id="refheading7742030114625"></a></p>
+<p><span id="refheading7742030114625" name="refheading7742030114625" class="odt-bookmark-anchor"></span></p>
 <h3 id="414-dao">4.1.4. <span style="color: #4f81bd">[dao] 包</span></h3>
-<p>目前我们已到达以下阶段：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002DC0000010714869FD8.png" width="366" height="131" style="display:inline-block; margin:4px;width:9.684cm;height:3.478cm;" class="odt-zoomable" data-zoom-src="images/10000000000002DC0000010714869FD8.png" /></td></tr></table>
+<p>目前进展到以下步骤：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002DC0000010714869FD8.png" width="366" height="131" style="display:inline-block; margin:4px;width:9.684cm;height:3.478cm;" class="odt-zoomable" data-zoom-src="images/10000000000002DC0000010714869FD8.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，两个已修正的包，
+  <li>在 [1] 中，这两个已修正的包，
   </li>
-  <li>在[2]中，[dao]包。由于不再存在任何EJB，EJB远程和本地接口的概念已不再适用。我们将它们移除[3]。
+  <li>在 [2] 中，即 [dao] 包。 由于不再有 EJB，因此 EJB 中的远程和本地接口概念也不复存在。我们将它们删除 [3]。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003740000022BCC80A005.png" width="442" height="277" style="display:inline-block; margin:4px;width:11.695cm;height:7.341cm;" class="odt-zoomable" data-zoom-src="images/10000000000003740000022BCC80A005.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003740000022BCC80A005.png" width="442" height="277" style="display:inline-block; margin:4px;width:11.695cm;height:7.341cm;" class="odt-zoomable" data-zoom-src="images/10000000000003740000022BCC80A005.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，[DaoJpa] 类中的错误有两个原因：
+  <li>在 [1] 中，[DaoJpa] 类的错误有两个原因：
   </li>
-  <li>导入了与 EJB 相关的包（第 6–8 行）；
+  <li>导入了一个与 EJB 相关的包（第 6-8 行）；
   </li>
-  <li>使用了我们刚刚移除的本地和远程接口。
+  <li>使用了我们刚刚删除的本地和远程接口。
   </li>
 </ul>
 
-<p>我们删除了有问题的代码行，并使用 [IDao] 接口代替了本地和远程接口 [2]。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002B600000205C2A09165.png" width="347" height="258" style="display:inline-block; margin:4px;width:9.181cm;height:6.839cm;" class="odt-zoomable" data-zoom-src="images/10000000000002B600000205C2A09165.png" /></td></tr></table>
+<p>我们删除错误的行，并使用接口 [IDao] 代替本地和远程接口 [2]。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002B600000205C2A09165.png" width="347" height="258" style="display:inline-block; margin:4px;width:9.181cm;height:6.839cm;" class="odt-zoomable" data-zoom-src="images/10000000000002B600000205C2A09165.png" /></td></tr></table>
 
-<p>在 EJB 项目中，[DaoJpa] 类是一个单例，其方法在事务内运行。我们将看到，[DaoJpa] 类将成为由 Spring 管理的 Bean。默认情况下，每个 Spring Bean 都是单例。这满足了第一个属性。第二个属性则是通过 Spring 的 <strong>@Transactional</strong> 注解实现的 [3]：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C9000001E7DEF4C63A.png" width="613" height="244" style="display:inline-block; margin:4px;width:16.207cm;height:6.443cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C9000001E7DEF4C63A.png" /></td></tr></table>
+<p>在 EJB 项目中，[DaoJpa] 类是一个单例，其方法在事务内执行。 我们将看到，类 [DaoJpa] 将成为一个由 Spring 管理的 Bean。默认情况下，所有 Spring Bean 都是单例。以上是第一个特性。第二个特性是通过 Spring 的 <strong>@Transactional</strong> 注解在 [3] 中实现的：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004C9000001E7DEF4C63A.png" width="613" height="244" style="display:inline-block; margin:4px;width:16.207cm;height:6.443cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C9000001E7DEF4C63A.png" /></td></tr></table>
 
-<p>完成这些操作后，项目中不再存在任何错误 [4]。</p>
-<p><a id="refheading7742230114625"></a></p>
-<h3 id="415-jpa">4.1.5. <span style="color: #4f81bd">配置 [JPA] 层</span></h3>
-<p>在 EJB 项目中，我们通过 [persistence.xml] 文件配置了 [JPA] 层。这里我们也有一个 [JPA] 层，因此需要创建该文件。在 EJB 项目中，我们使用 GlassFish 生成了该文件。而在这里，我们将手动构建它。主要原因是 [persistence.xml] 文件中的部分配置已迁移到 Spring 配置文件本身中。</p>
-<p>我们创建 [persistence.xml] 文件：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000017A000000DD2CC08CFB.png" width="189" height="111" style="display:inline-block; margin:4px;width:5.001cm;height:2.925cm;" class="odt-zoomable" data-zoom-src="images/100000000000017A000000DD2CC08CFB.png" /></td></tr></table>
+<p>完成上述操作后，项目中不再出现错误 [4]。</p>
+<p><span id="refheading7742230114625" name="refheading7742230114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="415-jpa">4.1.5. <span style="color: #4f81bd">[JPA] 层的配置</span></h3>
+<p>在项目 EJB 中，我们曾通过文件 [persistence.xml] 配置了 [JPA] 层。此处我们有一个 [JPA] 层，因此需要创建该文件。 在项目 EJB 中，我们曾使用 Glassfish 生成该文件。在此，我们将手动构建它。主要原因是 [persistence.xml] 文件中的一部分配置迁移到了 Spring 配置文件本身中。</p>
+<p>我们创建文件 [persistence.xml]：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000017A000000DD2CC08CFB.png" width="189" height="111" style="display:inline-block; margin:4px;width:5.001cm;height:2.925cm;" class="odt-zoomable" data-zoom-src="images/100000000000017A000000DD2CC08CFB.png" /></td></tr></table>
 
 <p>内容如下：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
@@ -1125,28 +1127,28 @@
 </code></pre></div>
 
 <ul>
-  <li>第 3 行：我们为持久化单元命名，
+  <li>第 3 行：为持久化单元命名，
   </li>
-  <li>第 3 行：事务类型为 RESOURCE_LOCAL。在 EJB 项目中，该值是 JTA，表示事务由 EJB 容器管理。值 RESOURCE_LOCAL 表示应用程序自行管理事务。在此处，我们将通过 Spring 实现这一点，
+  <li>第 3 行：事务类型为 RESOURCE_LOCAL。在项目 EJB 中，该值是 JTA，表示事务由容器 EJB 管理。 值 RESOURCE_LOCAL 表示应用程序自行管理事务。此处将通过 Spring 实现，
   </li>
-  <li>第4–7行：四个JPA实体的完整名称。此项为可选，因为Hibernate会自动在项目的ClassPath中搜索它们。
+  <li>第4-7行：四个实体的完整名称为JPA。此项为可选，因为Hibernate会自动在项目的ClassPath中查找它们。
   </li>
 </ul>
 
-<p>就这样。JPA 提供程序的名称、其属性以及数据源的 JDBC 特性现已写入 Spring 配置文件。</p>
-<p><a id="refheading7742430114625"></a></p>
-<h3 id="416-spring">4.1.6. <span style="color: #4f81bd">Spring 配置文件</span></h3>
-<p>我们提到过，[DaoJpa] 类是 Spring 管理的 Bean。这是通过配置文件实现的。该文件还将包含数据库访问配置以及事务管理配置。它必须位于项目的 <em>ClassPath</em> 中。我们将它放在 [Other sources] 文件夹中：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000163000000F58EFFF5A9.png" width="178" height="123" style="display:inline-block; margin:4px;width:4.697cm;height:3.242cm;" class="odt-zoomable" data-zoom-src="images/1000000000000163000000F58EFFF5A9.png" /></td></tr></table>
+<p>就这样。JPA 提供程序的名称、其属性以及数据源的特征 JDBC 现已写入 Spring 配置文件。</p>
+<p><span id="refheading7742430114625" name="refheading7742430114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="416-spring">4.1.6. <span style="color: #4f81bd">Spring配置文件</span></h3>
+<p>我们提到 [DaoJpa] 类是 Spring 管理的 Bean。这是通过配置文件实现的。该文件还将包含数据库访问配置以及事务管理配置。它应位于项目的 <em>ClassPath</em> 中。 我们将它放在 [Other sources] 分支中：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000163000000F58EFFF5A9.png" width="178" height="123" style="display:inline-block; margin:4px;width:4.697cm;height:3.242cm;" class="odt-zoomable" data-zoom-src="images/1000000000000163000000F58EFFF5A9.png" /></td></tr></table>
 
-<p>[spring-config-dao.xml] 文件内容如下：</p>
+<p>[spring-config-dao.xml]文件内容如下：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;beans</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">xmlns</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.springframework.org/schema/beans</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">xmlns:xsi</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.w3.org/2001/XMLSchema-instance</span><span style="color:#800080">&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#808000">xmlns:tx</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.springframework.org/schema/tx</span><span style="color:#800080">&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">       </span><span style="color:#808000">xsi:schemaLocation</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd</span><span style="color:#800080">&quot;&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- application layers --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- 应用层 --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dao</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">    </span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- EntityManagerFactory --&gt;</span></span></span>
@@ -1162,102 +1164,102 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;/bean&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;/property&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/bean&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- data source DBCP --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- 数据源DBCP --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dataSource</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">org.apache.commons.dbcp.BasicDataSource</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">destroy-method</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">close</span><span style="color:#800080">&quot;&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">driverClassName</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">value</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">com.mysql.jdbc.Driver</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">url</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">value</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">jdbc:mysql://localhost:3306/dbrdvmedecins2</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">username</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">value</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">root</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">password</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">value</span><span style="color:#800080">=&quot;&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/bean&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- transaction manager --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- 事务管理器 --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;tx:annotation-driven</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">transaction-manager</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">txManager</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">txManager</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">org.springframework.orm.jpa.JpaTransactionManager</span><span style="color:#800080">&quot;&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">entityManagerFactory</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">ref</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">entityManagerFactory</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/bean&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- translation of exceptions --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- 异常处理 --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- persistence --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&lt;!-- 持久化 --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;/beans&gt;</span></span>
 </code></pre></div>
 
-<p>这是一个与 Spring 2.x 兼容的文件。我们尚未尝试使用 3.x 版本的新功能。</p>
+<p>这是一个兼容 Spring 2.x 的文件。我们并未尝试使用 3.x 版本的新特性。</p>
 <ul>
-  <li>第 2–4 行：配置文件的根 &lt;beans&gt; 标签。我们在此不详细说明该标签的各项属性。请务必仔细复制粘贴，因为这些属性中的任何错误都可能导致难以理解的错误。
+  <li>第 2-4 行：配置文件的根标签 &lt;beans&gt;。我们不对此标签的各项属性进行详细说明。请务必进行复制/粘贴操作，因为这些属性中的任何一个出现错误都可能导致难以理解的错误，
   </li>
-  <li>第 7 行：&quot;dao&quot; Bean 引用了 [<span style="color: #0000ff">rdvmedecins.dao.DaoJpa</span>] 类的实例。将创建一个单例（singleton），并实现应用程序的 [dao] 层，
+  <li>第7行：&quot;dao&quot; Bean 指向 [rdvmedecins.dao.DaoJpa] 类的实例。将创建一个唯一的实例（单例），并实现应用程序的 [dao] 层，
   </li>
-  <li>第 24–29 行：定义了一个数据源。它提供了我们之前提到的“连接池”服务。此处使用了来自 <i>Apache Commons DBCP</i> 项目 [http://jakarta.apache.org/commons/dbcp/] 的 [DBCP]，
+  <li>第24-29行：定义了一个数据源。它提供了我们之前提到的“连接池”服务。这里使用<i>的是Apache Commons项目</i>中的[DBCP]（该项目包含DBCP和[http://jakarta.apache.org/commons/dbcp/]），
   </li>
-  <li>第 25–28 行：为了与目标数据库建立连接，数据源需要知道所使用的 JDBC 驱动程序（第 25 行）、数据库 URL（第 26 行）、连接用户名及其密码（第 27–28 行），
+  <li>第25-28行：为了与目标数据库建立连接，数据源需要知道所使用的驱动程序（第25行）、数据库的URL（第26行）， 连接用户及其密码（第27-28行），
   </li>
-  <li>第 10–21 行：配置 JPA 层，
+  <li>第10-21行：配置JPA层，
   </li>
-  <li>第 10 行：定义了一个 [EntityManagerFactory] Bean，该 Bean 能够创建 [EntityManager] 对象来管理持久化上下文。实例化的类 [LocalContainerEntityManagerFactoryBean] 由 Spring 提供。它需要若干参数才能实例化自身，这些参数在第 11–20 行中定义，
+  <li>第 10 行：定义了一个 [EntityManagerFactory] 类型的 Bean，该 Bean 能够创建 [EntityManager] 类型的对象来管理持久化上下文。 实例化的 [LocalContainerEntityManagerFactoryBean] 类由 Spring 提供。它需要若干参数才能实例化，这些参数在第 11-20 行中定义，
   </li>
-  <li>第 11 行：用于获取 DBMS 连接的数据源。即第 24–29 行中定义的 [DBCP] 源，
+  <li>第 11 行：用于获取 SGBD 连接的数据源。即第 24-29 行定义的 [DBCP] 数据源，
   </li>
-  <li>第 12–20 行：要使用的 JPA 实现，
+  <li>第12至20行：要使用的JPA实现，
   </li>
-  <li>第 13 行：定义使用 Hibernate 作为 JPA 实现，
+  <li>第13行：将Hibernate定义为要使用的JPA实现，
   </li>
-  <li>第 14 行：Hibernate 必须与目标 DBMS 配合使用的 SQL 方言，此处为 MySQL5，
+  <li>第 14 行：Hibernate 需配合目标 SGBD（此处为 MySQL5）使用的 SQL 方言，
   </li>
-  <li>第 16 行（已注释）：要求将 Hibernate 执行的 SQL 语句记录到控制台，
+  <li>第 16 行（已注释）：要求将 Hibernate 执行的 SQL 命令记录到控制台，
   </li>
-  <li>第 17 行（已注释）：要求在应用程序启动时生成数据库（删除并创建），
+  <li>第 17 行（已注释）：要求在应用程序启动时生成数据库（drop 和 create），
   </li>
-  <li>第 32 行：指定使用 Java 注解管理事务（也可以在 <i>spring-config.xml </i>中声明）。具体来说，这是 [DaoJpa] 类中使用的 <b>@Transactional</b> 注解，
+  <li>第 32 行：表明事务通过 Java 注解进行管理（这些注解本也可在 <i>spring-config.xml</i> 中声明）。特别是 [DaoJpa] 类中出现的 <b>@Transactional</b> 注解，
   </li>
-  <li>第 33–35 行：定义要使用的事务管理器，
+  <li>第33-35行：定义了要使用的事务管理器，
   </li>
   <li>第 33 行：事务管理器是 Spring 提供的类，
   </li>
-  <li>第 34 行：Spring 的事务管理器需要知道管理 JPA 层的 <i>EntityManagerFactory</i>。这就是第 10–21 行中定义的那个，
+  <li>第 34 行：Spring 的事务处理器需要知道管理 JPA 层的 <i>EntityManagerFactory</i>。该类定义在第 10-21 行，
   </li>
   <li>第 41 行：定义了管理 Spring 持久化注解的类，
   </li>
-  <li>第 38 行：定义了 Spring 类，该类负责处理 <b>@Repository</b> 注解等功能，使得被此注解标注的类能够将数据库管理系统（DBMS）中的原生 JDBC 驱动程序异常转换为 [DataAccessException] 类型的通用 Spring 异常。这种转换将原生 JDBC 异常封装在 [DataAccessException] 类型中，该类型包含多个子类：
+  <li>第38行：定义了Spring类，该类主要管理<b>@Repository</b>注解，使带有该注解的类能够将JDBC驱动程序中的原生异常（SGBD）转换为[DataAccessException]类型的Spring泛型异常。 此转换将原生异常 JDBC 封装为类型 [DataAccessException]，该类型包含多个子类：
   </li>
 </ul>
 
 <p><img src="images/10000000000001C00000009BC508DC35.png" width="314" height="109" style="width:8.301cm;height:2.872cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C00000009BC508DC35.png" /></p>
-<p>这种转换使客户端程序能够以通用方式处理异常，而无需考虑目标数据库管理系统。我们在 Java 代码中并未使用 <strong>@Repository</strong> 注解。因此，第 38 行是多余的。我们保留它仅供参考。</p>
-<p>至此，Spring 配置文件的配置已完成。该配置摘自 Spring 文档。将其适配到各种场景中，通常只需进行两处修改：</p>
+<p>此转换使客户端程序能够以通用方式处理异常，无论目标 SGBD 为何。我们在 Java 代码中未使用 <strong>@Repository</strong> 注解，因此第 38 行是多余的。我们保留该行仅供参考。</p>
+<p>至此，Spring 配置文件的介绍已全部完成。该配置文件摘自 Spring 文档。将其适配于各种场景通常只需进行两处修改：</p>
 <ul>
-  <li>目标数据库：第24–29行，
+  <li>目标数据库的配置：第24-29行，
   </li>
-  <li>JPA 实现：第 12–20 行。
+  <li>JPA 实现的调整：第 12-20 行。
   </li>
 </ul>
 
-<p>代码运行时，配置文件中的所有 Bean 都会被实例化。我们接下来将了解具体实现方式。</p>
-<p><a id="refheading7742630114625"></a></p>
-<h3 id="417-junit">4.1.7. <span style="color: #4f81bd">JUnit 测试类</span></h3>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004BD000001394D523E7C.png" width="607" height="157" style="display:inline-block; margin:4px;width:16.048cm;height:4.142cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BD000001394D523E7C.png" /></td></tr></table>
+<p>在代码执行时，配置文件中的所有 Bean 都会被实例化。我们将看到具体实现方式。</p>
+<p><span id="refheading7742630114625" name="refheading7742630114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="417-junit">4.1.7. <span style="color: #4f81bd">测试类 JUnit</span></h3>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004BD000001394D523E7C.png" width="607" height="157" style="display:inline-block; margin:4px;width:16.048cm;height:4.142cm;" class="odt-zoomable" data-zoom-src="images/10000000000004BD000001394D523E7C.png" /></td></tr></table>
 
-<p>我们使用 JUnit 测试对 EJB 项目的 [DAO] 层进行了测试。接下来，我们将对 Spring 项目的 [DAO] 层进行同样的测试：</p>
+<p>此前我们曾使用测试用例 JUnit 对项目 EJB 的 [DAO] 层进行了测试。对于 Spring 项目的 [DAO] 层，</p>
 <ul>
-  <li>在[1]和[2]中，将JUnit测试在两个项目之间复制粘贴，
+  <li>在 [1] 和 [2] 项目中，将测试 JUnit 复制粘贴到这两个项目之间，
   </li>
-  <li>在[3]中，导入的测试在新环境中出现了错误。
+  <li>在 [3] 中，导入的测试在新的环境中出现了错误。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000031E000003110062CA5D.png" width="399" height="393" style="display:inline-block; margin:4px;width:10.557cm;height:10.386cm;" class="odt-zoomable" data-zoom-src="images/100000000000031E000003110062CA5D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000031E000003110062CA5D.png" width="399" height="393" style="display:inline-block; margin:4px;width:10.557cm;height:10.386cm;" class="odt-zoomable" data-zoom-src="images/100000000000031E000003110062CA5D.png" /></td></tr></table>
 
-<p>[1] 中报告的错误是 EJB 的远程接口已不存在。此外，第 19 行 [dao] 字段的初始化代码原本是一个 EJB 专用的 JNDI 调用（第 25–28 行）。要实例化第 19 行中的 [dao] 字段，我们需要使用 Spring 配置文件。具体操作如下：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044A000002E3E3516C63.png" width="549" height="370" style="display:inline-block; margin:4px;width:14.526cm;height:9.777cm;" class="odt-zoomable" data-zoom-src="images/100000000000044A000002E3E3516C63.png" /></td></tr></table>
+<p>报告的错误[1]是EJB远程接口的错误，而该接口已不存在。 此外，第19行中字段[dao]的初始化代码，原本是针对EJB（第25-28行）的专属调用JNDI。 要实例化第19行的字段[dao]，我们需要利用Spring的配置文件。具体操作如下：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000044A000002E3E3516C63.png" width="549" height="370" style="display:inline-block; margin:4px;width:14.526cm;height:9.777cm;" class="odt-zoomable" data-zoom-src="images/100000000000044A000002E3E3516C63.png" /></td></tr></table>
 
 <ul>
   <li>第 21 行：接口类型已变为 [IDao]，
   </li>
-  <li>第 28 行：实例化 [spring-config-dao.xml] 文件中声明的所有 Bean，具体而言是这个：
+  <li>第28行：实例化[spring-config-dao.xml]文件中声明的所有Bean，特别是以下这个：
   </li>
 </ul>
 
@@ -1266,18 +1268,18 @@
 </code></pre></div>
 
 <ul>
-  <li>第 29 行从第 28 行的 Spring 上下文中请求 <span style="color: #800080">id=&quot;</span><span style="color: #0000ff">dao</span><span style="color: #800080">&quot; </span>的 Bean 引用。随后，我们获取了 Spring 已实例化的 [DaoJpa] 单例（即上文所述的<i>类</i>）的引用。
+  <li>第29行向第28行的Spring上下文<span style="color: #800080">请求一个id=&quot;</span><span style="color: #0000ff">dao</span><span style="color: #800080">&quot;</span>的Bean引用。于是我们获得了一个对Spring已实例化的单例[DaoJpa]（即上文的class）的引用。
   </li>
 </ul>
 
-<p>第 28–29 行构建了以下代码块（粉色虚线）：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000040C000000BACF0DB68A.png" width="518" height="93" style="display:inline-block; margin:4px;width:13.705cm;height:2.461cm;" class="odt-zoomable" data-zoom-src="images/100000000000040C000000BACF0DB68A.png" /></td></tr></table>
+<p>第28-29行构建了以下代码块（粉色虚线部分）：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000040C000000BACF0DB68A.png" width="518" height="93" style="display:inline-block; margin:4px;width:13.705cm;height:2.461cm;" class="odt-zoomable" data-zoom-src="images/100000000000040C000000BACF0DB68A.png" /></td></tr></table>
 
-<p>当 JUnit 客户端测试运行时，[DAO] 层已被实例化。因此，我们可以测试其方法。请注意，与需要 Glassfish 服务器的 EJB [DAO] 测试不同，运行此测试无需服务器。在此，所有操作均在同一 JVM 内运行。</p>
-<p>现在我们可以运行 JUnit 测试了。MySQL 服务器必须处于运行状态。测试结果如下：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003CF000001E864B80977.png" width="488" height="244" style="display:inline-block; margin:4px;width:12.899cm;height:6.456cm;" class="odt-zoomable" data-zoom-src="images/10000000000003CF000001E864B80977.png" /></td></tr></table>
+<p>当客户端 JUnit 的测试运行时，[DAO] 层已被实例化。因此可以测试其方法。 需要注意的是，与需要 Glassfish 服务器的 EJB [DAO] 测试不同，此测试无需服务器。在此，所有操作均在同一个 JVM 中执行。</p>
+<p>现在可以运行 JUnit 测试了。必须先启动 MySQL 服务器。结果如下：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003CF000001E864B80977.png" width="488" height="244" style="display:inline-block; margin:4px;width:12.899cm;height:6.456cm;" class="odt-zoomable" data-zoom-src="images/10000000000003CF000001E864B80977.png" /></td></tr></table>
 
-<p>JUnit 测试通过了。让我们像在 EJB 测试中那样查看测试日志：</p>
+<p>测试 JUnit 已成功。让我们像测试 EJB 时那样查看测试日志：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1359,7 +1361,7 @@
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">INFO</span><span class="p">:</span> <span class="n">HHH000412</span><span class="p">:</span> <span class="n">Hibernate</span> <span class="n">Core</span> <span class="p">{</span><span class="mf">4.1.2</span><span class="p">}</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">mai</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">2012</span> <span class="mi">5</span><span class="p">:</span><span class="mi">10</span><span class="p">:</span><span class="mi">30</span> <span class="n">PM</span> <span class="n">org</span><span class="o">.</span><span class="n">hibernate</span><span class="o">.</span><span class="n">cfg</span><span class="o">.</span><span class="n">Environment</span> <span class="o">&lt;</span><span class="n">clinit</span><span class="o">&gt;</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="o">...</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">Infos</span><span class="p">:</span> <span class="n">Pre</span><span class="o">-</span><span class="n">instantiating</span> <span class="n">singletons</span> <span class="ow">in</span> <span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">beans</span><span class="o">.</span><span class="n">factory</span><span class="o">.</span><span class="n">support</span><span class="o">.</span><span class="n">DefaultListableBeanFactory</span><span class="o">@</span><span class="mi">6</span><span class="n">affe94b</span><span class="p">:</span> <span class="n">defining</span> <span class="n">beans</span> <span class="p">[</span><span class="n">dao</span><span class="p">,</span><span class="n">entityManagerFactory</span><span class="p">,</span><span class="n">dataSource</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">aop</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">internalAutoProxyCreator</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">transaction</span><span class="o">.</span><span class="n">annotation</span><span class="o">.</span><span class="n">AnnotationTransactionAttributeSource</span><span class="c1">#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0]; root of factory hierarchy</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">Infos</span><span class="p">:</span> <span class="n">Pre</span><span class="o">-</span><span class="n">instantiating</span> <span class="n">singletons</span> <span class="ow">in</span> <span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">beans</span><span class="o">.</span><span class="n">factory</span><span class="o">.</span><span class="n">support</span><span class="o">.</span><span class="n">DefaultListableBeanFactory</span><span class="o">@</span><span class="mi">6</span><span class="n">affe94b</span><span class="p">:</span> <span class="n">defining</span> <span class="n">beans</span> <span class="p">[</span><span class="n">dao</span><span class="p">,</span><span class="n">entityManagerFactory</span><span class="p">,</span><span class="n">dataSource</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">aop</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">internalAutoProxyCreator</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">transaction</span><span class="o">.</span><span class="n">annotation</span><span class="o">.</span><span class="n">AnnotationTransactionAttributeSource</span><span class="c1">#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0]; 工厂层级根节点</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="n">Liste</span> <span class="n">des</span> <span class="n">clients</span> <span class="p">:</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="n">Client</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mr</span><span class="p">,</span><span class="n">Jules</span><span class="p">,</span><span class="n">MARTIN</span><span class="p">]</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="n">Client</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Christine</span><span class="p">,</span><span class="n">GERMAN</span><span class="p">]</span>
@@ -1423,64 +1425,64 @@
 <a id="__codelineno-0-72" name="__codelineno-0-72"></a><span class="n">Rv</span><span class="p">[</span><span class="mi">211</span><span class="p">,</span> <span class="n">Creneau</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]],</span> <span class="n">Client</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="n">Melle</span><span class="p">,</span><span class="n">Brigitte</span><span class="p">,</span><span class="n">BISTROU</span><span class="p">]]</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>第1-4行：Spring日志，
+  <li>第 1-4 行：Spring 日志，
   </li>
-  <li>第5-10行：Hibernate日志，
+  <li>第 5-10 行：Hibernate 日志，
   </li>
-  <li>第 11 行：Spring 报告了所有已实例化的 Bean。首先，我们看到 [dao] Bean，
+  <li>第 11 行：Spring 报告其实例化的所有 Bean。其中首先出现的是 Bean [dao]，
   </li>
-  <li>第 12 行及后续：JUnit 测试日志，
+  <li>第12行及后续：JUnit测试日志，
   </li>
-  <li>第 60–65 行：我们清楚地看到因向数据库添加已存在的预约而引发的异常。回想一下，在 EJB 中，由于序列化问题，我们并未遇到此异常。
+  <li>第60-65行：清晰可见因向数据库中添加已存在的预约而引发的异常。需要指出的是，在EJB中，由于序列化问题，并未出现此异常。
   </li>
 </ul>
 
-<p>[dao] 层已正常运行。接下来我们将构建 [business] 层。</p>
-<p><a id="refheading7742830114625"></a></p>
-<h2 id="42">4.2. <span style="color: #4f81bd">[业务]层</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F40000010FBF9685C2.png" width="634" height="135" style="display:inline-block; margin:4px;width:16.775cm;height:3.584cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F40000010FBF9685C2.png" /></td></tr></table>
+<p>[dao]层已正常运行。我们现在开始构建[métier]层。</p>
+<p><span id="refheading7742830114625" name="refheading7742830114625" class="odt-bookmark-anchor"></span></p>
+<h2 id="42-metier">4.2. <span style="color: #4f81bd">[métier]层</span></h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F40000010FBF9685C2.png" width="634" height="135" style="display:inline-block; margin:4px;width:16.775cm;height:3.584cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F40000010FBF9685C2.png" /></td></tr></table>
 
-<p>我们采用与[DAO]层相同的方法，将EJB项目中的内容复制并粘贴到Spring项目中。</p>
-<p><a id="refheading7743030114625"></a></p>
+<p>我们采用与 [DAO] 层相同的方法，将 EJB 项目的内容复制并粘贴到 Spring 项目中。</p>
+<p><span id="refheading7743030114625" name="refheading7743030114625" class="odt-bookmark-anchor"></span></p>
 <h3 id="421-netbeans">4.2.1. <span style="color: #4f81bd">NetBeans 项目</span></h3>
-<p>我们正在创建一个类型为 [Java 应用程序] 的新 Maven 项目，并删除了所有不需要保留的内容 [1]：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001610000013DF4AEE2CE.png" width="177" height="159" style="display:inline-block; margin:4px;width:4.671cm;height:4.195cm;" class="odt-zoomable" data-zoom-src="images/10000000000001610000013DF4AEE2CE.png" /></td></tr></table>
+<p>我们构建一个新的 [Java Application] 类型的 Maven 项目，并从 [1] 中移除所有不需要保留的内容：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001610000013DF4AEE2CE.png" width="177" height="159" style="display:inline-block; margin:4px;width:4.671cm;height:4.195cm;" class="odt-zoomable" data-zoom-src="images/10000000000001610000013DF4AEE2CE.png" /></td></tr></table>
 
-<p><a id="refheading7743230114625"></a></p>
-<h3 id="422">4.2.2. <span style="color: #4f81bd">项目依赖项</span></h3>
+<p><span id="refheading7743230114625" name="refheading7743230114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="422">4.2.2. <span style="color: #4f81bd">项目的依赖项</span></h3>
 <p>在架构中：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F20000011A0FACAC92.png" width="633" height="141" style="display:inline-block; margin:4px;width:16.748cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F20000011A0FACAC92.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F20000011A0FACAC92.png" width="633" height="141" style="display:inline-block; margin:4px;width:16.748cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F20000011A0FACAC92.png" /></td></tr></table>
 
-<p>[业务]层依赖于[DAO]层。因此，我们需要在当前项目中添加对前一个项目的依赖：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000519000001B78CDF0713.png" width="653" height="220" style="display:inline-block; margin:4px;width:17.265cm;height:5.808cm;" class="odt-zoomable" data-zoom-src="images/1000000000000519000001B78CDF0713.png" /></td></tr></table>
+<p>[métier] 层依赖于 [dao] 层。因此，我们需要添加对前一个项目的依赖：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000519000001B78CDF0713.png" width="653" height="220" style="display:inline-block; margin:4px;width:17.265cm;height:5.808cm;" class="odt-zoomable" data-zoom-src="images/1000000000000519000001B78CDF0713.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 和 [2] 中，我们添加了对 [DAO] 层项目的依赖；
+  <li>在 [1] 和 [2] 中，我们添加了对 [dao] 层项目的依赖，
   </li>
-  <li>在[3]中，这一依赖引入了其他依赖，即[DAO]层项目的依赖。
+  <li>在 [3] 中，该依赖关系又引入了其他依赖关系，即 [dao] 层项目的依赖关系。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD00000118DAD1F9A7.png" width="615" height="140" style="display:inline-block; margin:4px;width:16.26cm;height:3.704cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD00000118DAD1F9A7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004CD00000118DAD1F9A7.png" width="615" height="140" style="display:inline-block; margin:4px;width:16.26cm;height:3.704cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD00000118DAD1F9A7.png" /></td></tr></table>
 
 <ul>
-  <li>在[1]和[2]中，我们将Java源代码从EJB项目复制到Spring项目，
+  <li>在 [1] 和 [2] 中，将项目 EJB 的 Java 源代码复制到 Spring 项目中，
   </li>
-  <li>而在[3]中，导入的源代码在新环境中出现了错误。
+  <li>在 [3] 中，导入的源代码在新环境中出现了错误。
   </li>
 </ul>
 
-<p>首先，我们将 [4] 中已不存在的远程和本地接口从 [业务] 层中移除：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F6000002E23BD9EE02.png" width="635" height="369" style="display:inline-block; margin:4px;width:16.801cm;height:9.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F6000002E23BD9EE02.png" /></td></tr></table>
+<p>首先删除 [métier] 层中已不存在的远程和本地接口（[4]）：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F6000002E23BD9EE02.png" width="635" height="369" style="display:inline-block; margin:4px;width:16.801cm;height:9.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F6000002E23BD9EE02.png" /></td></tr></table>
 
 <ul>
-  <li>在 [5] 中，[Business] 类中的错误有多种原因：
+  <li>在 [5] 中，[Metier] 类的错误有多种原因：
     <ul>
       <li>使用了已不存在的 [javax.ejb] 包；
       </li>
-      <li>使用了已不存在的 [IDaoLocal] 接口；
+      <li>使用了已不存在的接口 [IDaoLocal]；
       </li>
-      <li>使用了已不存在的 [IMetierRemote] 和 [IMetierLocal] 接口。
+      <li>使用了已不存在的接口 [IMetierRemote] 和 [IMetierLocal]。
       </li>
     </ul>
   </li>
@@ -1488,100 +1490,100 @@
 
 <p>我们将 </p>
 <ul>
-  <li>删除所有与 [javax.ejb] 包相关的错误行，
+  <li>删除所有与软件包 [javax.ejb] 相关的错误行，
   </li>
-  <li>将 [IDaoLocal] 接口替换为 [IDao] 接口，
+  <li>将接口 [IDaoLocal] 替换为接口 [IDao]，
   </li>
-  <li>将 [IMetierRemote] 和 [IMetierLocal] 接口替换为 [IMetier] 接口。
+  <li>并将接口 [IMetierRemote] 和 [IMetierLocal] 替换为接口 [IMetier]。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CB0000022A9D6B2173.png" width="614" height="277" style="display:inline-block; margin:4px;width:16.233cm;height:7.329cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CB0000022A9D6B2173.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004CB0000022A9D6B2173.png" width="614" height="277" style="display:inline-block; margin:4px;width:16.233cm;height:7.329cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CB0000022A9D6B2173.png" /></td></tr></table>
 
 <ul>
-  <li>在 [6] 中，按照上述方法修正类后，
+  <li>在 [6] 中，经此修正的类，
   </li>
-  <li>在[7]中，不再出现错误。
+  <li>为 [7]，错误已消除。
   </li>
 </ul>
 
-<p>我们已移除了对 EJB 的引用，但现在需要获取它们的属性：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000293000000CAE9037AD8.png" width="461" height="141" style="display:inline-block; margin:4px;width:12.201cm;height:3.739cm;" class="odt-zoomable" data-zoom-src="images/1000000000000293000000CAE9037AD8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p>我们已删除对 EJB 的引用，但现在需要找回其属性：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000293000000CAE9037AD8.png" width="461" height="141" style="display:inline-block; margin:4px;width:12.201cm;height:3.739cm;" class="odt-zoomable" data-zoom-src="images/1000000000000293000000CAE9037AD8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <ul>
-  <li>第 22 行：我们原本使用了一个单例。通过将该类设为 Spring 管理的 Bean，即可实现此行为，
+  <li>第 22 行：原为单例模式。通过将该类设为 Spring 管理的 Bean，即可实现此特性，
   </li>
-  <li>第 23 行：每个方法都在事务中运行。这将通过使用 Spring 的 <b>@Transactional</b> 注解来实现，
+  <li>第23行：每个方法都在事务中执行。这将通过Spring的<b>@Transactional</b>注解实现，
   </li>
-  <li>第 27–28 行：通过 EJB 容器注入获取了对 [DAO] 层的引用。我们将使用 Spring 注入。
+  <li>第27-28行：对[DAO]层的引用是通过EJB容器的注入获得的。我们将使用Spring注入。
   </li>
 </ul>
 
-<p>因此，Spring 项目中 [Metier] 类的代码演变如下：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000035C00000245E0BB035A.png" width="430" height="290" style="display:inline-block; margin:4px;width:11.377cm;height:7.685cm;" class="odt-zoomable" data-zoom-src="images/100000000000035C00000245E0BB035A.png" /></td></tr></table>
+<p>因此，Spring 项目中 [Metier] 类的代码如下所示：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000035C00000245E0BB035A.png" width="430" height="290" style="display:inline-block; margin:4px;width:11.377cm;height:7.685cm;" class="odt-zoomable" data-zoom-src="images/100000000000035C00000245E0BB035A.png" /></td></tr></table>
 
 <p>Java 代码部分到此结束。其余内容将在 Spring 配置文件中完成。</p>
-<p><a id="refheading7743430114625"></a></p>
-<h3 id="423-spring">4.2.3. <span style="color: #4f81bd">Spring 配置文件</span></h3>
-<p>我们将 Spring 配置文件从 [DAO] 层项目复制到 [Business] 层项目中。首先，如果 [Business] 层项目中不存在 [Other Resources] 分支，则创建该分支：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CB000000EBA95F3476.png" width="614" height="118" style="display:inline-block; margin:4px;width:16.233cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CB000000EBA95F3476.png" /></td></tr></table>
+<p><span id="refheading7743430114625" name="refheading7743430114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="423-spring">4.2.3. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">Spring配置文件</span></strong></span></h3>
+<p>我们将 [DAO] 层项目中的 Spring 配置文件复制到 [métier] 层项目中。 如果 [métier] 层项目中不存在 [Other Resources] 分支，则先创建该分支：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004CB000000EBA95F3476.png" width="614" height="118" style="display:inline-block; margin:4px;width:16.233cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CB000000EBA95F3476.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 的 [Files] 选项卡中，在 [main] 文件夹下创建一个子文件夹，
+  <li>在 [1] 中，于 [Files] 选项卡下，在 [main] 文件夹中创建一个子文件夹，
   </li>
-  <li>在 [2] 中，该子文件夹应命名为 [resources]，
+  <li>在 [2] 中，其名称应改为 [resources]，
   </li>
-  <li>在 [3] 中，[Projects] 选项卡下已创建 [Other Sources] 分支。
+  <li>在 [3] 中，[Projects] 选项卡下已创建了 [Other Sources] 分支。
   </li>
 </ul>
 
-<p>现在我们可以复制并粘贴 Spring 配置文件：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F4000001A6EF9F586A.png" width="634" height="211" style="display:inline-block; margin:4px;width:16.775cm;height:5.583cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F4000001A6EF9F586A.png" /></td></tr></table>
+<p>我们可以开始复制/粘贴 Spring 配置文件：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F4000001A6EF9F586A.png" width="634" height="211" style="display:inline-block; margin:4px;width:16.775cm;height:5.583cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F4000001A6EF9F586A.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，将文件从 [DAO] 项目复制到 [business] 项目 [2] 中，
+  <li>在 [1] 中，将项目 [DAO] 的文件复制到项目 [métier] [2] 中，
   </li>
-  <li>在 [3] 中，即该已复制的文件。
+  <li>即 [3]，该文件即为已复制的文件。
   </li>
 </ul>
 
-<p>已复制的配置文件用于配置 [DAO] 层。我们向其中添加一个 Bean 来配置 [business] 层：</p>
+<p>已复制的配置文件用于配置 [DAO] 层。我们为其添加一个 Bean 来配置 [métier] 层：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w">  </span><span class="cm">&lt;!-- application layers --&gt;</span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="w">   </span><span class="cm">&lt;!-- 应用层 --&gt;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dao&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;rdvmedecins.dao.DaoJpa&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;metier&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;rdvmedecins.metier.service.Metier&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">    </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;dao&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;dao&quot;</span><span class="nt">/&gt;</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nt">&lt;/bean&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>第 2 行：[DAO] 层 Bean，
+  <li>第 2 行：[DAO] 层的 Bean，
   </li>
-  <li>第 3–5 行：[业务] 层 Bean，
+  <li>第 3-5 行：[métier] 层的 Bean，
   </li>
-  <li>第 3 行：该 Bean 名为 <i>métier</i>（<i>id</i> 属性），是 [rdvmedecins.metier.service.Metier] 类的实例（<i>class</i> 属性）。该 Bean 将与其他 Bean 一样，在应用程序启动时被实例化。
+  <li>第 3 行：该 Bean 名为 <i>métier</i>（属性 <i>id</i>），是类 [rdvmedecins.metier.service.Metier] 的实例（属性 <i>class</i>）。 该 Bean 将与其他 Bean 一样在应用程序启动时被实例化。
   </li>
 </ul>
 
-<p>让我们回顾一下 [rdvmedecins.metier.service.Metier] Bean 的代码：</p>
+<p>回顾一下 Bean [rdvmedecins.metier.service.Metier] 的代码：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.metier.service;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Metier </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> IMetier, Serializable {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// dao layer</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// DAO层</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IDao dao;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Metier() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
-  <li>第 8 行：[dao] 字段将由 Spring 在<i>业务</i> Bean 实例化时一并实例化。让我们回到 Spring 配置文件中该 Bean 的定义：
+  <li>第 8 行：字段 [dao] 将由 Spring 与 Bean <i>métier</i> 同时实例化。让我们回到 Spring 配置文件中该 Bean 的定义：
   </li>
 </ul>
 
@@ -1589,91 +1591,91 @@
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
 <span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="w">  </span><span class="cm">&lt;!-- application layers --&gt;</span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="w">   </span><span class="cm">&lt;!-- 应用层 --&gt;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dao&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;rdvmedecins.dao.DaoJpa&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">  </span><span class="nt">&lt;bean</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;metier&quot;</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;rdvmedecins.metier.service.Metier&quot;</span><span class="nt">&gt;</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;dao&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;dao&quot;</span><span class="nt">/&gt;</span>
 <a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">&lt;/bean&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>第 4 行：使用 &lt;property&gt; 标签来初始化已实例化的 Bean 的字段。字段名称由 <i>name</i> 属性指定。 因此，[rdvmedecins.metier.service.Metier] 类的 <b>dao</b> 字段将被实例化。这通过 <b>setDao</b> 方法实现，该方法必须存在。分配给它的值即为 <b>ref</b> 属性的值。此处，该值是第 2 行中 <b>dao</b> Bean 的引用。
+  <li>第 4 行：&lt;property&gt; 标签用于初始化已实例化 Bean 的字段。字段名称由 <i>name</i> 属性指定。 因此，将被实例化的将是类 [rdvmedecins.metier.service.Metier] 中的 <b>dao</b> 字段。它将通过一个必须存在的 <b>setDao</b> 方法进行实例化。分配给它的值是 <b>ref</b> 属性的值。此处的值即为第 2 行中 <b>dao</b> Bean 的引用。
   </li>
 </ul>
 
 <p>简而言之，在代码中：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.metier.service;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Metier </span><span style="font-weight:bold;color:#7f0055">implements</span><span style="color:#000000"> IMetier, Serializable {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// dao layer</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// DAO层</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IDao dao;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Metier() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>第 19 行中的 <strong>dao</strong> 字段将由 Spring 通过引用 [dao] 层进行初始化。这正是我们所期望的。<strong>dao</strong> 字段将由 Spring 通过一个我们需要添加的 <em>setter</em> 方法进行初始化：</p>
+<p>第 19 行的 <strong>dao</strong> 字段将由 Spring 通过 [dao] 层的引用进行初始化。这正是我们想要的效果。<strong>dao</strong> 字段将由 Spring 通过 <em>setter</em> 进行初始化，我们需要添加该方法：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// setter</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 设置器</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> setDao(IDao dao) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.dao = dao;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>我们将 Spring 配置文件重命名为以反映这些更改：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000186000000DA12614E24.png" width="195" height="109" style="display:inline-block; margin:4px;width:5.159cm;height:2.884cm;" class="odt-zoomable" data-zoom-src="images/1000000000000186000000DA12614E24.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000186000000DA12614E24.png" width="195" height="109" style="display:inline-block; margin:4px;width:5.159cm;height:2.884cm;" class="odt-zoomable" data-zoom-src="images/1000000000000186000000DA12614E24.png" /></td></tr></table>
 
-<p>现在我们可以进行测试了。我们将使用之前用于测试 [Business] EJB 的控制台测试。</p>
-<p><a id="refheading7743630114625"></a></p>
-<h3 id="424">4.2.4. <span style="color: #4f81bd">测试 [业务] 层</span></h3>
-<p>该测试将采用以下架构运行：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B1000000BE39513B73.png" width="601" height="95" style="display:inline-block; margin:4px;width:15.889cm;height:2.514cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B1000000BE39513B73.png" /></td></tr></table>
+<p>现在我们可以进行测试了。我们将使用之前用于测试 EJB 和 [Metier] 的控制台测试脚本。</p>
+<p><span id="refheading7743630114625" name="refheading7743630114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="424-metier">4.2.4. <span style="color: #4f81bd">[métier] 层的测试</span></h3>
+<p>测试将采用以下架构进行：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004B1000000BE39513B73.png" width="601" height="95" style="display:inline-block; margin:4px;width:15.889cm;height:2.514cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B1000000BE39513B73.png" /></td></tr></table>
 
-<p>我们将 EJB 项目中的控制台测试复制到 Spring 项目中：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048600000133CA492045.png" width="579" height="153" style="display:inline-block; margin:4px;width:15.319cm;height:4.06cm;" class="odt-zoomable" data-zoom-src="images/100000000000048600000133CA492045.png" /></td></tr></table>
+<p>我们将 EJB 项目的控制台测试复制到 Spring 项目中：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000048600000133CA492045.png" width="579" height="153" style="display:inline-block; margin:4px;width:15.319cm;height:4.06cm;" class="odt-zoomable" data-zoom-src="images/100000000000048600000133CA492045.png" /></td></tr></table>
 
 <ul>
-  <li>在[1]和[2]中，在两个项目之间进行复制粘贴；
+  <li>在 [1] 和 [2] 项目之间进行复制/粘贴，
   </li>
-  <li>在 [3] 中，导入的代码存在错误。
+  <li>在 [3] 中，导入的代码出现错误。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002D10000020EE05450D1.png" width="505" height="368" style="display:inline-block; margin:4px;width:13.351cm;height:9.74cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D10000020EE05450D1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002D10000020EE05450D1.png" width="505" height="368" style="display:inline-block; margin:4px;width:13.351cm;height:9.74cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D10000020EE05450D1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>导入的代码包含两种类型的错误：</p>
+<p>导入的代码存在两种类型的错误：</p>
 <ul>
-  <li>第 13 行：[IMetierRemote] 接口已被 [IMetier] 接口取代，
+  <li>第 13 行：接口 [IMetierRemote] 已被接口 [IMetier] 替换，
   </li>
-  <li>第 24–27 行：[business] 层不再通过 JNDI 调用进行实例化，而是通过从 Spring 配置文件中实例化 Bean 来实现。
+  <li>第24-27行：[métier]层的实例化不再通过调用JNDI实现，而是通过实例化Spring配置文件中的Bean来实现。
   </li>
 </ul>
 
-<p>我们修正了这两个问题：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000494000002F1D3088508.png" width="586" height="377" style="display:inline-block; margin:4px;width:15.505cm;height:9.962cm;" class="odt-zoomable" data-zoom-src="images/1000000000000494000002F1D3088508.png" /></td></tr></table>
+<p>我们修正了以下两点：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000494000002F1D3088508.png" width="586" height="377" style="display:inline-block; margin:4px;width:15.505cm;height:9.962cm;" class="odt-zoomable" data-zoom-src="images/1000000000000494000002F1D3088508.png" /></td></tr></table>
 
 <ul>
-  <li>第 22 行：使用了 [spring-config-metier-dao.xml] 文件。该文件中的所有 Bean 随后都会被实例化。其中包括以下内容：
+  <li>第 22 行：调用文件 [spring-config-metier-dao.xml]。该文件中的所有 Bean 均被实例化。其中包括以下这些：
   </li>
 </ul>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line"><span class="odt-code-line-content">  &lt;!-- application layers --&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &lt;!-- 应用层 --&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dao</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">rdvmedecins.dao.DaoJpa</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">metier</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">rdvmedecins.metier.service.Metier</span><span style="color:#800080">&quot;&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;property</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">name</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dao</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">ref</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dao</span><span style="color:#800080">&quot;/&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;/bean&gt;</span></span>
 </code></pre></div>
 
-<p>这两个 Bean 分别代表测试架构中的 [DAO] 层和 [业务] 层：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004FA000000AA288CFF7D.png" width="637" height="85" style="display:inline-block; margin:4px;width:16.854cm;height:2.249cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FA000000AA288CFF7D.png" /></td></tr></table>
+<p>这两个 Bean 分别代表测试架构中的 [DAO] 和 [métier] 层：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004FA000000AA288CFF7D.png" width="637" height="85" style="display:inline-block; margin:4px;width:16.854cm;height:2.249cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FA000000AA288CFF7D.png" /></td></tr></table>
 
-<p>完成上述步骤后，即可运行测试：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000FB000000F010E380F8.png" width="176" height="168" style="display:inline-block; margin:4px;width:4.65cm;height:4.447cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FB000000F010E380F8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p>完成上述操作后，测试即可开始：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000FB000000F010E380F8.png" width="176" height="168" style="display:inline-block; margin:4px;width:4.65cm;height:4.447cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FB000000F010E380F8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
 <p>测试日志如下：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
@@ -1732,7 +1734,7 @@
 <a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">Infos</span><span class="p">:</span> <span class="n">Refreshing</span> <span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">support</span><span class="o">.</span><span class="n">ClassPathXmlApplicationContext</span><span class="o">@</span><span class="mi">22</span><span class="n">a92801</span><span class="p">:</span> <span class="n">startup</span> <span class="n">date</span> <span class="p">[</span><span class="n">Fri</span> <span class="n">May</span> <span class="mi">25</span> <span class="mi">09</span><span class="p">:</span><span class="mi">45</span><span class="p">:</span><span class="mi">07</span> <span class="n">CEST</span> <span class="mi">2012</span><span class="p">];</span> <span class="n">root</span> <span class="n">of</span> <span class="n">context</span> <span class="n">hierarchy</span>
 <a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">mai</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">2012</span> <span class="mi">9</span><span class="p">:</span><span class="mi">45</span><span class="p">:</span><span class="mi">07</span> <span class="n">AM</span> <span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">beans</span><span class="o">.</span><span class="n">factory</span><span class="o">.</span><span class="n">xml</span><span class="o">.</span><span class="n">XmlBeanDefinitionReader</span> <span class="n">loadBeanDefinitions</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="o">....</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="n">Infos</span><span class="p">:</span> <span class="n">Pre</span><span class="o">-</span><span class="n">instantiating</span> <span class="n">singletons</span> <span class="ow">in</span> <span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">beans</span><span class="o">.</span><span class="n">factory</span><span class="o">.</span><span class="n">support</span><span class="o">.</span><span class="n">DefaultListableBeanFactory</span><span class="o">@</span><span class="mi">38</span><span class="n">a0a058</span><span class="p">:</span> <span class="n">defining</span> <span class="n">beans</span> <span class="p">[</span><span class="n">dao</span><span class="p">,</span><span class="n">metier</span><span class="p">,</span><span class="n">entityManagerFactory</span><span class="p">,</span><span class="n">dataSource</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">aop</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">internalAutoProxyCreator</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">transaction</span><span class="o">.</span><span class="n">annotation</span><span class="o">.</span><span class="n">AnnotationTransactionAttributeSource</span><span class="c1">#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0]; root of factory hierarchy</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="n">Infos</span><span class="p">:</span> <span class="n">Pre</span><span class="o">-</span><span class="n">instantiating</span> <span class="n">singletons</span> <span class="ow">in</span> <span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">beans</span><span class="o">.</span><span class="n">factory</span><span class="o">.</span><span class="n">support</span><span class="o">.</span><span class="n">DefaultListableBeanFactory</span><span class="o">@</span><span class="mi">38</span><span class="n">a0a058</span><span class="p">:</span> <span class="n">defining</span> <span class="n">beans</span> <span class="p">[</span><span class="n">dao</span><span class="p">,</span><span class="n">metier</span><span class="p">,</span><span class="n">entityManagerFactory</span><span class="p">,</span><span class="n">dataSource</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">aop</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">internalAutoProxyCreator</span><span class="p">,</span><span class="n">org</span><span class="o">.</span><span class="n">springframework</span><span class="o">.</span><span class="n">transaction</span><span class="o">.</span><span class="n">annotation</span><span class="o">.</span><span class="n">AnnotationTransactionAttributeSource</span><span class="c1">#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txManager,org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0,org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor#0]; 工厂层级根节点</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="n">Liste</span> <span class="n">des</span> <span class="n">clients</span> <span class="p">:</span>
 <a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="n">Client</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mr</span><span class="p">,</span><span class="n">Jules</span><span class="p">,</span><span class="n">MARTIN</span><span class="p">]</span>
 <a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="n">Client</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Christine</span><span class="p">,</span><span class="n">GERMAN</span><span class="p">]</span>
@@ -1783,65 +1785,65 @@
 <a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="n">Agenda</span><span class="p">[</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">],</span><span class="mi">25</span><span class="o">/</span><span class="mi">05</span><span class="o">/</span><span class="mi">2012</span><span class="p">,</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">23</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">24</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">18</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]]</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>第 1–4 行：Spring 和 Hibernate 日志，
+  <li>第1-4行：Spring和Hibernate的日志，
   </li>
-  <li>第 5 行：由 Spring 实例化的 Bean。请注意 <b>DAO </b>和<b>业务 </b>Bean，
+  <li>第5行：Spring实例化的Bean。请注意<b>DAO</b>和<b>业务</b>Bean，
   </li>
-  <li>第 6–53 行：测试日志。这些日志与 EJB 项目测试中获得的结果一致。请参阅该测试的相关注释（<a href="#logs-test-ejb-metier"><u><span style="color: #0563c1">第 3.5.3 节</span></u></a>）。
+  <li>第6-53行：测试日志。这些日志与项目EJB的测试结果一致。请参阅该测试的注释（<a href="hiiingonghengu---01rdvmedecins-jsf2-ejb.html#logs-test-ejb-metier"><u><span style="color: #0563c1">第3.5.3节</span></u></a>）。
   </li>
 </ul>
 
-<p>我们已经构建了[业务]层。现在我们将转向最后一个层，即[Web]层。</p>
-<p><a id="refheading7743830114625"></a></p>
-<h2 id="43-web">4.3. <span style="color: #4f81bd">[Web] 层</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004FA00000121520DCF9D.png" width="637" height="144" style="display:inline-block; margin:4px;width:16.854cm;height:3.822cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FA00000121520DCF9D.png" /></td></tr></table>
+<p>我们已构建了 [métier] 层。接下来我们将进入最后一层，即 [web] 层。</p>
+<p><span id="refheading7743830114625" name="refheading7743830114625" class="odt-bookmark-anchor"></span></p>
+<h2 id="43-web">4.3. <span style="color: #4f81bd">[web]层</span></h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004FA00000121520DCF9D.png" width="637" height="144" style="display:inline-block; margin:4px;width:16.854cm;height:3.822cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FA00000121520DCF9D.png" /></td></tr></table>
 
-<p>要构建 [web] 层，我们将采用与其他两层相同的方法，即从 EJB 项目的 [web] 层进行复制和粘贴。</p>
-<p><a id="refheading7744030114625"></a></p>
+<p>要构建 [web] 层，我们将采用与前两个层相同的方法，即从项目 EJB 的 [web] 层进行复制/粘贴。</p>
+<p><span id="refheading7744030114625" name="refheading7744030114625" class="odt-bookmark-anchor"></span></p>
 <h3 id="431-netbeans">4.3.1. <span style="color: #4f81bd">NetBeans 项目</span></h3>
-<p>首先，我们创建一个 Web 项目：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E000001799C3E3475.png" width="647" height="189" style="display:inline-block; margin:4px;width:17.119cm;height:4.988cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E000001799C3E3475.png" /></td></tr></table>
+<p>首先，我们构建一个 Web 项目：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000050E000001799C3E3475.png" width="647" height="189" style="display:inline-block; margin:4px;width:17.119cm;height:4.988cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E000001799C3E3475.png" /></td></tr></table>
 
 <ul>
   <li>在 [1] 中，创建一个新项目，
   </li>
-  <li>在 [2] 中，选择 [Web Application] 类型的 Maven 项目，
+  <li>在 [2] 中，创建一个类型为 [Web Application] 的 Maven 项目，
   </li>
   <li>在 [3] 中，为其命名，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DE0000012126C675BC.png" width="623" height="144" style="display:inline-block; margin:4px;width:16.484cm;height:3.822cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DE0000012126C675BC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004DE0000012126C675BC.png" width="623" height="144" style="display:inline-block; margin:4px;width:16.484cm;height:3.822cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DE0000012126C675BC.png" /></td></tr></table>
 
 <ul>
-  <li>在 [4] 中，这次我们选择 Tomcat 服务器，而不是之前用于 EJB 项目的 GlassFish，
+  <li>在 [4] 中，这次选择 Tomcat 服务器，而不是 EJB 项目中使用的 Glassfish，
   </li>
   <li>在 [5] 中，生成的项目，
   </li>
-  <li>在[6]中，是移除了[index.jsp]和[Source Packages]包后的项目。
+  <li>在 [6] 中，这是在删除 [index.jsp] 以及 [Source Packages] 的包之后的项目。
   </li>
 </ul>
 
-<p><a id="refheading7744230114625"></a></p>
-<h3 id="432">4.3.2. <span style="color: #4f81bd">项目依赖关系</span></h3>
-<p>让我们来看看项目架构：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DE0000011664182297.png" width="623" height="139" style="display:inline-block; margin:4px;width:16.484cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DE0000011664182297.png" /></td></tr></table>
+<p><span id="refheading7744230114625" name="refheading7744230114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="432">4.3.2. <span style="color: #4f81bd">项目的依赖关系</span></h3>
+<p>让我们看看项目的架构：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004DE0000011664182297.png" width="623" height="139" style="display:inline-block; margin:4px;width:16.484cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DE0000011664182297.png" /></td></tr></table>
 
-<p>[Web] 层依赖于 [业务]、[DAO] 和 [JPA] 层。这些层属于我们刚刚构建的两个项目。因此，需要对这两个项目分别进行依赖声明：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003710000021BCDDAC4BF.png" width="441" height="270" style="display:inline-block; margin:4px;width:11.656cm;height:7.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000003710000021BCDDAC4BF.png" /></td></tr></table>
+<p>[web]层需要[métier]、[DAO]和[JPA]层。这些层属于我们刚刚构建的两个项目。因此，它依赖于这两个项目：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003710000021BCDDAC4BF.png" width="441" height="270" style="display:inline-block; margin:4px;width:11.656cm;height:7.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000003710000021BCDDAC4BF.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，我们添加了对 Spring / business 项目的依赖，
+  <li>在 [1] 中，我们添加了对 Spring / 业务项目的依赖，
   </li>
-  <li>在 [2] 中，已添加 Spring / business 项目。由于该项目本身依赖于 Spring / DAO / JPA 项目，因此后者已自动添加到依赖项中 [3]。
+  <li>在 [2] 中，已添加 Spring / 业务项目。 由于该项目本身依赖于 Spring / DAO / JPA 项目，因此该依赖项已自动添加到 [3] 的依赖列表中。
   </li>
 </ul>
 
 <p>让我们回到应用程序的结构：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F40000011A4032CB74.png" width="634" height="141" style="display:inline-block; margin:4px;width:16.775cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F40000011A4032CB74.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004F40000011A4032CB74.png" width="634" height="141" style="display:inline-block; margin:4px;width:16.775cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F40000011A4032CB74.png" /></td></tr></table>
 
-<p>Web 层是 JSF 层。因此，我们需要 Java Server Faces 库。Tomcat 服务器中没有这些库。因此，该依赖项不会像在 GlassFish 服务器中那样具有 [provided] 作用域，而是具有 [compile] 作用域——这是未指定作用域时的默认作用域。</p>
-<p>我们直接在 [pom.xml] 文件中添加这些依赖项：</p>
+<p>Web层是JSF层。因此我们需要Java Server Faces库。而Tomcat服务器并不包含这些库。 因此，该依赖项的范围（scope）将不再是 [provided]（如在 Glassfish 服务器中那样），而是 [compile]——这是未指定范围时的默认范围。</p>
+<p>我们将这些依赖项直接添加到 [pom.xml] 的代码中：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;dependencies&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;dependency&gt;</span></span></span>
@@ -1869,107 +1871,107 @@
 </code></pre></div>
 
 <ul>
-  <li>已在 [pom.xml] 文件中添加了第 7–16 行。这些是 JSF 的依赖项，也是 EJB/GlassFish 项目中使用的依赖项。请注意，这些依赖项没有 &lt;scope&gt; 标签，因此默认具有 [compile] 作用域。这样，JSF 库就会被嵌入到 Web 项目的 [war] 归档中。
+  <li>第 7-16 行已添加到文件 [pom.xml] 中。这些是针对 JSF 的依赖项，也是 EJB / Glassfish 项目中使用的依赖项。 需要注意的是，这些依赖项没有 &lt;scope&gt; 标签。因此，它们默认的范围是 [compile]。因此，JSF 库将被打包到 Web 项目的 [war] 归档中。
   </li>
 </ul>
 
-<p>将这些依赖项添加到 [pom.xml] 文件后，我们编译项目以下载这些依赖项。</p>
-<p><a id="refheading7744430114625"></a></p>
-<h3 id="433-jsfglassfish-jsftomcat">4.3.3. <span style="color: #4f81bd">将 JSF/GlassFish 项目移植到 JSF/Tomcat 项目</span></h3>
-<p>我们将 JSF/Glassfish 项目中的所有代码复制到 JSF/Tomcat 项目中：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A50000018F9327086D.png" width="595" height="200" style="display:inline-block; margin:4px;width:15.73cm;height:5.279cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A50000018F9327086D.png" /></td></tr></table>
+<p>在将这些依赖项添加到 [pom.xml] 文件后，我们编译该项目以便下载这些依赖项。</p>
+<p><span id="refheading7744430114625" name="refheading7744430114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="433-jsf-glassfish-jsf-tomcat">4.3.3. <span style="color: #4f81bd">将 JSF / Glassfish 项目迁移至 JSF / Tomcat 项目</span></h3>
+<p>我们将 JSF / Glassfish 项目的全部代码复制到 JSF / Tomcat 项目中：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004A50000018F9327086D.png" width="595" height="200" style="display:inline-block; margin:4px;width:15.73cm;height:5.279cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A50000018F9327086D.png" /></td></tr></table>
 
 <ul>
-  <li>[1, 2, 3]：将旧项目中的网页复制到新项目中，
+  <li>[1, 2, 3]：将旧项目的网页复制到新项目中，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004840000014E7116B41C.png" width="578" height="167" style="display:inline-block; margin:4px;width:15.293cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004840000014E7116B41C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004840000014E7116B41C.png" width="578" height="167" style="display:inline-block; margin:4px;width:15.293cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004840000014E7116B41C.png" /></td></tr></table>
 
 <ul>
-  <li>[1, 2, 3]: 将旧项目的 Java 代码复制到新项目中。出现了错误。这是正常的。我们会修复它们，
+  <li>[1, 2, 3]：将旧项目的Java代码复制到新项目。存在一些错误，这是正常的。我们将予以修正，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000531000000E697E09756.png" width="665" height="115" style="display:inline-block; margin:4px;width:17.582cm;height:3.043cm;" class="odt-zoomable" data-zoom-src="images/1000000000000531000000E697E09756.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000531000000E697E09756.png" width="665" height="115" style="display:inline-block; margin:4px;width:17.582cm;height:3.043cm;" class="odt-zoomable" data-zoom-src="images/1000000000000531000000E697E09756.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，于 NetBeans 的 [文件] 选项卡下，在 [main] 文件夹内创建一个 [resources] 子文件夹，
+  <li>在 [1] 中，于 NetBeans 的 [Files] 标签页中，在 [main] 文件夹下创建子文件夹 [resources]，
   </li>
-  <li>这将在 [项目] 选项卡 [3] 中生成 [其他源] 分支，
+  <li>这将在[Projects]选项卡中创建分支[Other Sources] [3]，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C300000165C896217C.png" width="610" height="179" style="display:inline-block; margin:4px;width:16.127cm;height:4.724cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C300000165C896217C.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004C300000165C896217C.png" width="610" height="179" style="display:inline-block; margin:4px;width:16.127cm;height:4.724cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C300000165C896217C.png" /></td></tr></table>
 
 <ul>
-  <li>[1, 2, 3]：将消息文件从旧项目复制到新项目。
+  <li>[1, 2, 3]：将旧项目中的消息文件复制到新项目中。
   </li>
 </ul>
 
-<p><a id="refheading7744630114625"></a></p>
-<h3 id="434">4.3.4. <span style="color: #4f81bd">对导入项目的修改</span></h3>
-<p>我们注意到导入的 Java 代码中存在错误。让我们来检查一下：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005290000027B00CD0038.png" width="661" height="318" style="display:inline-block; margin:4px;width:17.477cm;height:8.401cm;" class="odt-zoomable" data-zoom-src="images/10000000000005290000027B00CD0038.png" /></td></tr></table>
+<p><span id="refheading7744630114625" name="refheading7744630114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="434">4.3.4. <span style="color: #4f81bd">导入项目的修改</span></h3>
+<p>我们已指出导入的 Java 代码中存在错误。让我们来查看这些错误：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005290000027B00CD0038.png" width="661" height="318" style="display:inline-block; margin:4px;width:17.477cm;height:8.401cm;" class="odt-zoomable" data-zoom-src="images/10000000000005290000027B00CD0038.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，仅 [Application] Bean 存在错误；
+  <li>在 [1] 中，仅 [Application] Bean 存在错误，
   </li>
-  <li>而在 [2] 中，错误完全源于 [IMetierLocal] 接口，该接口已不复存在。这里可能令人惊讶的是，第 20 行并未被标记为错误。@EJB 注解明确指向 EJB，且在此处被识别。这是由于存在 [javaee-web-api-6.0] 依赖项 [3] 所致。 Java EE 6 引入了一种架构，允许在不具备 EJB 容器的服务器上部署基于 EJB 且不包含远程接口的 Web 应用程序。服务器只需提供 [javaee-web-api-6.0] 依赖项即可。我们可以看到，该依赖项具有 [provided] 作用域 [3]。
+  <li>在 [2] 中，错误仅因接口 [IMetierLocal] 已不存在而引发。这里令人惊讶的是，第 20 行并未报错。 注解 @EJB 明确引用了 EJB，且在此处被识别。这是因为存在依赖关系 [javaee-web-api-6.0] [3]。 Java EE 6 引入了一种架构，允许在没有 EJB 远程接口的服务器上，部署基于 EJB 的 Web 应用程序，即使这些服务器没有 EJB 容器。 服务器只需提供 [javaee-web-api-6.0] 依赖项即可。实际上，我们可以看到该依赖项的作用域为 [provided] [3]。
   </li>
 </ul>
 
-<p>在此，我们将不使用 [javaee-web-api-6.0] 依赖项。我们将其移除 [1]：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003640000010217C5D032.png" width="434" height="129" style="display:inline-block; margin:4px;width:11.483cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/10000000000003640000010217C5D032.png" /></td></tr></table>
+<p>在此我们不会使用依赖项 [javaee-web-api-6.0]。我们将删除 [1]：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003640000010217C5D032.png" width="434" height="129" style="display:inline-block; margin:4px;width:11.483cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/10000000000003640000010217C5D032.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D3000000967D226476.png" width="148" height="105" style="display:inline-block; margin:4px;width:3.911cm;height:2.78cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D3000000967D226476.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000D3000000967D226476.png" width="148" height="105" style="display:inline-block; margin:4px;width:3.911cm;height:2.78cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D3000000967D226476.png" /></td></tr></table>
 
-<p>这会导致新的错误[2]。我们先从[Form] Bean中的错误开始：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051A000002714841DA28.png" width="653" height="312" style="display:inline-block; margin:4px;width:17.277cm;height:8.267cm;" class="odt-zoomable" data-zoom-src="images/100000000000051A000002714841DA28.png" /></td></tr></table>
+<p>这导致了新的错误 [2]。我们将从 [Form]  bean 的错误开始处理：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051A000002714841DA28.png" width="653" height="312" style="display:inline-block; margin:4px;width:17.277cm;height:8.267cm;" class="odt-zoomable" data-zoom-src="images/100000000000051A000002714841DA28.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，出错的代码行与丢失 [javax] 包有关。 我们将它们全部删除 [2]。这些错误行使得 [Form] 类成为了一个会话范围的 Bean（[1] 的第 18–20 行）。此外，[Application] Bean 是在第 25 行注入的。这些信息将被移至 JSF 配置文件 [faces-config.xml] 中。
+  <li>在 [1] 中，出错的行与 [javax] 包的缺失有关。 我们将 [2] 中的所有相关行删除。这些错误行将类 [Form] 定义为会话作用域的 Bean（见 [1] 的第 18-20 行）。 此外，bean [Application] 是在第 25 行被注入的。这些信息将迁移到 JSF 和 [faces-config.xml] 的配置文件中。
   </li>
 </ul>
 
-<p>接下来我们来看 [Application] Bean：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C70000020405E06182.png" width="612" height="258" style="display:inline-block; margin:4px;width:16.18cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C70000020405E06182.png" /></td></tr></table>
+<p>接下来看 [Application] Bean：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004C70000020405E06182.png" width="612" height="258" style="display:inline-block; margin:4px;width:16.18cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C70000020405E06182.png" /></td></tr></table>
 
-<p>我们从 [1] 中删除了所有错误的代码行，并将第 13 行和第 21 行中的 [IMetierLocal] 接口改为 [IMetier]。在 [2] 中，已无错误<em>。</em>在 [1] 中，我们删除了第 15–16 行，这些代码曾将 [Application] 类定义为<em>应用程序作用域的</em> Bean<em>。</em> 这些信息将被移至 JSF 配置文件 [faces-config.xml] 中。我们 还删除了第 20 行，该行曾将 [business] 层的引用注入到 Bean 中。现在，该 Bean 将由 Spring 进行初始化。我们已经拥有必要的配置文件，即来自 Spring / Business 项目的那个。我们将它复制过来：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003C800000177E9BE82DA.png" width="484" height="188" style="display:inline-block; margin:4px;width:12.806cm;height:4.962cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C800000177E9BE82DA.png" /></td></tr></table>
+<p>删除 [1] 中所有错误的行，并将第 13 行和第 21 行中的接口 [IMetierLocal] 更改为 [IMetier]。 在 [2] 中，已无错误。在 [1] 中， 我们删除了第15-16行，这些代码原本将类[Application]定义为作用域为<em>application.的</em>Bean。该信息将迁移至JSF和[faces-config.xml]的配置文件中。 我们还删除了第 20 行，该行曾向 Bean 中注入 [métier] 层的引用。现在，该引用将由 Spring 进行初始化。我们已经拥有所需的配置文件，即 Spring / 业务项目中的配置文件。我们将它复制如下：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003C800000177E9BE82DA.png" width="484" height="188" style="display:inline-block; margin:4px;width:12.806cm;height:4.962cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C800000177E9BE82DA.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1, 2] 中，我们将 Spring / Business 项目中的 Spring 配置文件复制到 Spring / JSF 项目中，
+  <li>复制为 [1, 2]，我们将 Spring / 业务 项目中的 Spring 配置文件复制到 Spring / JSF 项目中，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A300000116D2C24468.png" width="210" height="139" style="display:inline-block; margin:4px;width:5.544cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A300000116D2C24468.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001A300000116D2C24468.png" width="210" height="139" style="display:inline-block; margin:4px;width:5.544cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A300000116D2C24468.png" /></td></tr></table>
 
-<p>在 [3] 中，结果如下。</p>
-<p>在 [Application] Bean 中，我们需要使用此配置文件来获取 [business] 层的引用。这在它的 [init] 方法中完成：</p>
+<p>在 [3] 中，即为结果。</p>
+<p>在 Bean [Application] 中，需利用该配置文件以获取 [métier] 层的引用。此操作在方法 [init] 中完成：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> beans;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.ApplicationContext;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.support.ClassPathXmlApplicationContext;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Application {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// business layer</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 业务层</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IMetier metier;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Application() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">PostConstruct</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> init() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// instantiation layer [business]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// [métier] 层的实例化</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      ApplicationContext ctx = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ClassPathXmlApplicationContext(</span><span style="color:#2a00ff">&quot;spring-config-metier-dao.xml&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      metier = (IMetier) ctx.getBean(</span><span style="color:#2a00ff">&quot;metier&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// caching doctors and customers</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// 将医生和客户缓存</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (Throwable th) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
@@ -1979,29 +1981,29 @@
 </code></pre></div>
 
 <ul>
-  <li>第 20 行：实例化来自 Spring 配置文件的 Bean，
+  <li>第 20 行：实例化 Spring 配置文件中的 Bean，
   </li>
-  <li>第 21 行：请求<b>业务 </b>Bean 的引用，即位于 [business] 层中的 Bean。
+  <li>第21行：请求<b>业务</b>Bean的引用，即[métier]层的引用。
   </li>
 </ul>
 
-<p>一般而言，Spring Bean 应在<strong>应用范围</strong> Bean 的 <strong>init</strong> 方法中进行实例化。还有另一种方法，即通过 Spring Servlet 来实例化 Bean。这需要修改 [web.xml] 文件，并添加对 [spring-web] 构建产品的依赖。为了与之前的代码保持一致，我们在此并未采用这种做法。</p>
-<p>我们已移除了 [Application] 和 [Form] 类中使其成为 JSF Bean 的注解。这些类必须保持为 JSF Bean。现在，我们不再使用注解，而是通过 JSF 配置文件 [WEB-INF/faces.config.xml] 来声明这些 Bean。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000149000000E98C13DFE1.png" width="165" height="117" style="display:inline-block; margin:4px;width:4.353cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/1000000000000149000000E98C13DFE1.png" /></td></tr></table>
+<p>通常情况下，Spring Bean 的实例化应在<strong>应用范围</strong> Bean 的 <strong>init</strong> 方法中进行。还有另一种方法，即通过 Spring Servlet 来实例化 Bean。这需要修改文件 [web.xml]，并添加对工件 [spring-web] 的依赖。 出于与先前代码保持一致的考虑，我们在此未采用该方法。</p>
+<p>我们已移除了 [Application] 和 [Form] 类中的注解，这些注解原本将它们定义为 JSF Bean。这些类必须保持为 JSF Bean。 因此，我们不再使用注解，而是通过 JSF 和 [WEB-INF / faces.config.xml] 的配置文件来声明 Bean。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000149000000E98C13DFE1.png" width="165" height="117" style="display:inline-block; margin:4px;width:4.353cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/1000000000000149000000E98C13DFE1.png" /></td></tr></table>
 
-<p>该文件现在如下所示：</p>
+<p>该文件现内容如下：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;1.0&#x27;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span><span style="color:#008080">?&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- =========== FULL CONFIGURATION FILE ================================== --&gt;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">faces-config</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;2.0&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">              <span style="color:#7f007f">xmlns</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://java.sun.com/xml/ns/javaee&quot;</span> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">              <span style="color:#7f007f">xmlns:xsi</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">              <span style="color:#7f007f">xsi:schemaLocation</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd&quot;</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">application</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- message file --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- 消息文件 --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">resource-bundle</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">base-name</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        messages</span></span>
@@ -2010,88 +2012,88 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">resource-bundle</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">message-bundle</span><span style="color:#008080">&gt;</span><span style="color:#000000">messages</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">message-bundle</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">application</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- the applicationBean bean --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- Bean applicationBean --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean-name</span><span style="color:#008080">&gt;</span><span style="color:#000000">applicationBean</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean-name</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean-class</span><span style="color:#008080">&gt;</span><span style="color:#000000">beans.Application</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean-class</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean-scope</span><span style="color:#008080">&gt;</span><span style="color:#000000">application</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean-scope</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- the bean form --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- 表单 Bean --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean-name</span><span style="color:#008080">&gt;</span><span style="color:#000000">form</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean-name</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean-class</span><span style="color:#008080">&gt;</span><span style="color:#000000">beans.Form</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean-class</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-bean-scope</span><span style="color:#008080">&gt;</span><span style="color:#000000">session</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean-scope</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">managed-property</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">property-name</span><span style="color:#008080">&gt;</span><span style="color:#000000">application</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">property-name</span><span style="color:#008080">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">value</span><span style="color:#008080">&gt;</span><span style="color:#000000">#{applicationBean}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">value</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        &lt;value&gt;#{applicationBean}&lt;/value&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-property</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">managed-bean</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">faces-config</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
 <ul>
-  <li>第 10–19 行配置了消息文件。这是我们在 JSF/EJB 项目中唯一的配置，
+  <li>第 10-19 行配置了消息文件。这是 JSF / EJB 项目中唯一的配置，
   </li>
-  <li>第 21–35 行声明了 JSF 应用程序 Bean。这是 JSF 1.x 中的标准做法。JSF 2 引入了注解，但 JSF 1.x 的方法仍然受支持，
+  <li>第21至35行声明了应用程序JSF的Bean。 这是 JSF 1.x 版本的标准方法。JSF 2 引入了注解，但 JSF 和 1.x 的方法仍然受支持，
   </li>
-  <li>第 21–25 行：声明 applicationBean，
+  <li>第 21-25 行：声明 <b>applicationBean</b> Bean，
   </li>
-  <li>第 22<b> </b>行：Bean 的名称。您可能会想使用“application”这个名称，但请避免这样做，因为这是 JSF 预定义 Bean 的名称，
+  <li>第 22 行：Bean 的名称。可能会有人想使用<b>“application”作为</b>名称，但应避免，因为这是 JSF 中一个预定义 Bean 的名称，
   </li>
-  <li>第 23 行：Bean 类的全名，
+  <li>第 23 行：Bean 类的完整名称，
   </li>
   <li>第 24 行：其作用域，
   </li>
-  <li>第 27–35 行：定义<b>表单 </b>Bean，
+  <li>第 27-35 行：定义<b>表单</b> Bean，
   </li>
   <li>第 28 行：Bean 的名称，
   </li>
-  <li>第 29 行：Bean 类的全名，
+  <li>第 29 行：Bean 类的完整名称，
   </li>
   <li>第 30 行：其作用域，
   </li>
-  <li>第 31–34 行：定义 [beans.Form] 类的属性，
+  <li>第 31-34 行：定义 [beans.Form] 类的属性，
   </li>
-  <li>第 32 行：属性名称。[beans.Form] 类必须包含一个同名字段及<b>相应的 setter</b> 方法，
+  <li>第 32 行：属性名称。[beans.Form] 类必须包含一个同名字段及其<b>对应的 setter</b> 方法，
   </li>
-  <li>第 33 行：字段的值。此处是第 21 行定义的<b> applicationBean 的</b>引用。因此，我们将<i>应用范围的</i> Bean <b>注入</b>到<i>会话范围的</i> Bean 中，以便后者能够访问<i>应用范围</i>的数据。
+  <li>第 33 行：字段的值。此处是第 21 行定义的 Bean <b>applicationBean</b> 的引用。 因此，此处将作用域为 <i>application</i> 的 Bean<b> 注入</b>到作用域为 <i>session</i> 的 Bean 中，以便后者能够访问作用域为 <i>application</i> 的数据。
   </li>
 </ul>
 
-<p>我们之前提到，[beans.Form] Bean 的 [application] 字段将<em>通过设置器</em>进行初始化。因此，如果 [beans.Form] 类中尚未存在该字段，我们必须将其添加进去：</p>
+<p>我们前面提到，bean [beans.Form] 的字段 [application] 将通过 <em>setter</em> 进行初始化。因此，如果该字段尚未存在，则需将其添加到类 [beans.Form] 中：</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> setApplication(Application application) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">this</span><span style="color:#000000">.application = application;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 </code></pre></div>
 
-<p><a id="refheading7744830114625"></a></p>
-<h3 id="435">4.3.5. <span style="color: #000000">测试应用程序</span></h3>
-<p><span style="color: #000000">我们的应用程序现已无错误，可以进行测试了：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000014AB282391E.png" width="644" height="165" style="display:inline-block; margin:4px;width:17.027cm;height:4.366cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000014AB282391E.png" /></td></tr></table>
+<p><span id="refheading7744830114625" name="refheading7744830114625" class="odt-bookmark-anchor"></span></p>
+<h3 id="435">4.3.5. <span style="color: #000000">应用程序测试</span></h3>
+<p><span style="color: #000000">我们的应用程序现已无错误，并已准备好进行测试：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005070000014AB282391E.png" width="644" height="165" style="display:inline-block; margin:4px;width:17.027cm;height:4.366cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000014AB282391E.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">在 [1] 中，修正后的项目，</span>
+  <li><span style="color: #000000">在 [1] 中，将修正后的项目</span>
   </li>
-  <li><span style="color: #000000">在 [2] 中，我们进行构建，</span>
+  <li><span style="color: #000000">在 [2] 中进行构建，</span>
   </li>
-  <li><span style="color: #000000">在 [3] 中，我们运行它。MySQL 数据库管理系统必须正在运行。如果 Tomcat 服务器尚未启动，它将随后启动 [4]，并显示应用程序的首页 [5]：</span>
+  <li><span style="color: #000000">在 [3] 中，我们运行它。必须启动 SGBD 和 MySQL。 如果 Tomcat 服务器尚未启动，则会启动 [4]，随后应用程序的首页将显示 [5]：</span>
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049C0000020228DFB041.png" width="590" height="257" style="display:inline-block; margin:4px;width:15.61cm;height:6.8cm;" class="odt-zoomable" data-zoom-src="images/100000000000049C0000020228DFB041.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000049C0000020228DFB041.png" width="590" height="257" style="display:inline-block; margin:4px;width:15.61cm;height:6.8cm;" class="odt-zoomable" data-zoom-src="images/100000000000049C0000020228DFB041.png" /></td></tr></table>
 
-<p><span style="color: #000000">此时，我们看到的就是我们一直在研究的应用程序。我们留给读者自行验证其是否正常运行。现在，让我们停止该应用程序：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F40000018B8CFFB55F.png" width="378" height="197" style="display:inline-block; margin:4px;width:10.001cm;height:5.225cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F40000018B8CFFB55F.png" /></td></tr></table>
+<p><span style="color: #000000">至此，我们已进入所研究的应用程序。请读者自行验证其是否正常运行。现在，让我们停止该应用程序：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002F40000018B8CFFB55F.png" width="378" height="197" style="display:inline-block; margin:4px;width:10.001cm;height:5.225cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F40000018B8CFFB55F.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">在 [1] 中，我们卸载了该应用程序，</span>
+  <li><span style="color: #000000">在 [1] 状态下，应用程序被卸载，</span>
   </li>
-  <li><span style="color: #000000">在 [2] 中，它已不复存在。</span>
+  <li><span style="color: #000000">在[2]中，该应用程序已不复存在。</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">现在让我们查看 Tomcat 的</span><a id="fuite-memoire-tomcat"></a><span style="color: #000000"> 日志：</span></p>
+<p><span style="color: #000000">现在我们来看Tomcat的</span><span id="fuite-memoire-tomcat" name="fuite-memoire-tomcat" class="odt-bookmark-anchor"></span><span style="color: #000000"> 日志：</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
 <span class="normal"><a href="#__codelineno-4-3">3</a></span>
@@ -2104,77 +2106,77 @@
 <a id="__codelineno-4-5" name="__codelineno-4-5"></a>mai 25, 2012 2:15:59 PM org.apache.catalina.startup.HostConfig checkResources
 <a id="__codelineno-4-6" name="__codelineno-4-6"></a>Infos: Repli (undeploy) de l&#39;application web ayant pour chemin de contexte /mv-rdvmedecins-spring-jsf2
 </code></pre></div></td></tr></table></div>
-<p><span style="color: #000000">第 2 行和第 4 行表明应用程序关闭时出现故障。 第 4 行表明可能存在内存泄漏的风险。事实上，这种情况确实发生了，过了一会儿 NetBeans 就无法使用了。这个问题特别令人沮丧，因为每次运行项目时都必须重启 NetBeans。在文档《通过示例了解 Struts 2》[</span><a href="http://tahe.developpez.com/java/struts2"><u><span style="color: #0563c1">http://tahe.developpez.com/java/struts2</span></u></a><span style="color: #000000">] 中已经遇到过这个问题。</span></p>
-<p><span style="color: #000000">网上关于此错误的信息很多。当从 Tomcat 中反复加载和卸载应用程序时，就会发生这种情况。过了一段时间后，就会出现</span> <em>java.lang.OutOfMemoryError: PermGen space</em><span style="color: #000000"> 错误。如果错误源于第三方库（JAR），就像本例中一样，似乎没有办法预防。此时必须重启 Tomcat 才能解决。</span></p>
-<p><span style="color: #000000">不过，您可以延缓该错误的发生。首先，增加已溢出的内存空间。</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000367000002052FBC5FCE.png" width="436" height="259" style="display:inline-block; margin:4px;width:11.523cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/1000000000000367000002052FBC5FCE.png" /></td></tr></table>
+<p><span style="color: #000000">第2行和第4行提示应用程序停止时出现故障。第4行指出可能存在内存泄漏的风险。 实际上，内存泄漏确实发生了，过了一会儿 NetBeans 就无法使用了。这个问题特别令人恼火，因为每次重新运行项目时都必须重新启动 NetBeans。在文档《通过实例了解 Struts 2》[http://tahe.developpez.com/java/struts2] 中已经遇到过这个问题。</span></p>
+<p><span style="color: #000000">网上关于此错误的信息很多。当反复在 Tomcat 上加载/卸载应用程序时，该错误就会出现。过了一段时间后，会出现错误 </span><em>java.lang.OutOfMemoryError: PermGen 空间</em><span style="color: #000000">。 如果该错误源于第三方归档文件（jar），如本例所示，似乎没有办法避免。此时必须重启 Tomcat 才能消除该错误。</span></p>
+<p><span style="color: #000000">不过，我们可以延缓该错误的出现。首先，增加溢出的内存空间。</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000367000002052FBC5FCE.png" width="436" height="259" style="display:inline-block; margin:4px;width:11.523cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/1000000000000367000002052FBC5FCE.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">在 [1] 中，进入 Tomcat 服务器属性，</span>
+  <li><span style="color: #000000">在 [1] 中，进入 Tomcat 服务器的属性，</span>
   </li>
-  <li><span style="color: #000000">在 [2] 中，进入 [Platform] 选项卡，设置内存溢出阈值。这里我们将其设为 1 GB，因为我们总共拥有 8 GB 内存。如果内存较少，您可以将其设为 512 MB（512 兆字节）。</span>
+  <li><span style="color: #000000">在[2]中，进入[Platform]选项卡，设置内存溢出的阈值。 此处设置为 1 GB，因为总内存为 8 GB。若内存较小，可设置为 512M（512 MB）。</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">接下来，将 MySQL JDBC 驱动程序放置在 </span><em>&lt;tomcat&gt;/lib 目录下，</em><span style="color: #000000">其中 </span><em>&lt;tomcat&gt;</em> <span style="color: #000000">是 Tomcat 的安装目录。</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003C6000001E210836A2C.png" width="483" height="241" style="display:inline-block; margin:4px;width:12.779cm;height:6.376cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C6000001E210836A2C.png" /></td></tr></table>
+<p><span style="color: #000000">随后，将 JDBC 驱动程序从 MySQL 移动到 &lt;tomcat&gt;/lib，其中 </span><em>&lt;tomcat&gt;</em> <span style="color: #000000">是 Tomcat 的安装目录。</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003C6000001E210836A2C.png" width="483" height="241" style="display:inline-block; margin:4px;width:12.779cm;height:6.376cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C6000001E210836A2C.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">在 [1] 的 Tomcat 属性中，记下其安装目录 &lt;tomcat&gt;，</span>
+  <li><span style="color: #000000">在 [1] 中，于 Tomcat 的属性中，记录其安装目录 &lt;tomcat&gt;，</span>
   </li>
-  <li><span style="color: #000000">在 &lt;tomcat&gt;/lib [2] 目录中，放置一个最新的 MySQL JDBC 驱动程序 [3]。</span>
+  <li><span style="color: #000000">在 &lt;tomcat&gt;/lib 目录下，将 [2] 驱动程序更新为 JDBC（最新版本），替换原有的 MySQL 和 [3]。</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">接下来，移除项目对 MySQL JDBC 驱动程序的依赖 [4]。</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000244000001BF5F660EE8.png" width="290" height="224" style="display:inline-block; margin:4px;width:7.673cm;height:5.914cm;" class="odt-zoomable" data-zoom-src="images/1000000000000244000001BF5F660EE8.png" /></td></tr></table>
+<p><span style="color: #000000">随后，移除项目对驱动程序 JDBC（版本号为 MySQL、[4]）的依赖。</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000244000001BF5F660EE8.png" width="290" height="224" style="display:inline-block; margin:4px;width:7.673cm;height:5.914cm;" class="odt-zoomable" data-zoom-src="images/1000000000000244000001BF5F660EE8.png" /></td></tr></table>
 
-<p><span style="color: #000000">完成此操作后，请测试应用程序。你会发现可以反复加载和卸载应用程序。然而，内存泄漏问题并未解决，只是推迟到了稍后才出现。</span></p>
-<p><a id="refheading7745030114625"></a></p>
-<h2 id="44">4.4. <span style="color: #4f81bd">结论</span></h2>
-<p><span style="color: #000000">我们将 JSF/EJB/GlassFish 应用程序迁移到了 JSF/Spring/Tomcat 环境中。迁移主要通过在两个项目之间进行复制粘贴来完成。之所以能够实现这一点，是因为 Spring 和 EJB3 具有许多相似之处。事实上，EJB3 的诞生正是因为 Spring 被证明比 EJB2 更高效，随后 EJB3 便融合了 Spring 的最佳特性。</span></p>
-<p><a id="refheading78686566070260"></a></p>
-<h2 id="45-eclipse">4.5. <span style="color: #4f81bd">使用 Eclipse 进行测试</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051600000153E5CD7488.png" width="651" height="170" style="display:inline-block; margin:4px;width:17.224cm;height:4.486cm;" class="odt-zoomable" data-zoom-src="images/100000000000051600000153E5CD7488.png" /></td></tr></table>
+<p><span style="color: #000000">完成上述操作后，对应用程序进行测试。发现可以反复加载/卸载应用程序。然而，内存泄漏问题并未解决，只是推迟到了稍后出现。</span></p>
+<p><span id="refheading7745030114625" name="refheading7745030114625" class="odt-bookmark-anchor"></span></p>
+<h2 id="44">4.4. <span style="color: #4f81bd"><strong><span style="color: #4f81bd">结论</span></strong></span></h2>
+<p><span style="color: #000000">我们将 JSF / EJB / Glassfish 应用程序迁移到了 JSF / Spring / Tomcat 环境。这主要通过在两个项目之间进行复制粘贴来实现。 之所以能够实现，是因为 Spring 和 EJB3 技术具有高度相似性。事实上，EJB3 的创建，正是源于 Spring 展现出的性能优于 EJB2。 随后，EJB3 便借鉴了 Spring 的优秀设计理念。</span></p>
+<p><span id="refheading78686566070260" name="refheading78686566070260" class="odt-bookmark-anchor"></span></p>
+<h2 id="45-eclipse">4.5. <span style="color: #4f81bd">使用Eclipse进行的测试</span></h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051600000153E5CD7488.png" width="651" height="170" style="display:inline-block; margin:4px;width:17.224cm;height:4.486cm;" class="odt-zoomable" data-zoom-src="images/100000000000051600000153E5CD7488.png" /></td></tr></table>
 
 <ul>
   <li>在 [1] 中，导入三个 Spring 项目，
   </li>
-  <li>在 [2] 中，从 [DAO] 层选择 JUnit 测试，并在 [3] 中运行它，
+  <li>在 [2] 中，选择 [DAO] 层中的 JUnit 测试并执行，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B700000157430DBD23.png" width="604" height="172" style="display:inline-block; margin:4px;width:15.968cm;height:4.538cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B700000157430DBD23.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004B700000157430DBD23.png" width="604" height="172" style="display:inline-block; margin:4px;width:15.968cm;height:4.538cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B700000157430DBD23.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A800000151BC16ED18.png" width="596" height="168" style="display:inline-block; margin:4px;width:15.769cm;height:4.457cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A800000151BC16ED18.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004A800000151BC16ED18.png" width="596" height="168" style="display:inline-block; margin:4px;width:15.769cm;height:4.457cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A800000151BC16ED18.png" /></td></tr></table>
 
 <ul>
-  <li>在 [4] 中，测试通过，
+  <li>在 [4] 中，测试成功，
   </li>
-  <li>在 [5] 中，控制台会输出日志。
+  <li>在 [5] 中，控制台日志。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051400000175F3BAD7CA.png" width="650" height="187" style="display:inline-block; margin:4px;width:17.198cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000051400000175F3BAD7CA.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051400000175F3BAD7CA.png" width="650" height="187" style="display:inline-block; margin:4px;width:17.198cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000051400000175F3BAD7CA.png" /></td></tr></table>
 
 <ul>
-  <li>在 [6A] [6B] 中，运行 [业务] 层的控制台客户端，
+  <li>在 [6A] [6B] 中，执行 [métier] 层的控制台客户端，
   </li>
-  <li>在 [7] 中，显示生成的控制台输出，
-  </li>
-</ul>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051100000124125B34D0.png" width="649" height="146" style="display:inline-block; margin:4px;width:17.159cm;height:3.863cm;" class="odt-zoomable" data-zoom-src="images/100000000000051100000124125B34D0.png" /></td></tr></table>
-
-<ul>
-  <li>在[8]和[9]中，我们在Tomcat 7服务器[10]上运行了该Web项目，
+  <li>在 [7] 中，显示的控制台界面，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000029A000002339A022B85.png" width="333" height="281" style="display:inline-block; margin:4px;width:8.811cm;height:7.447cm;" class="odt-zoomable" data-zoom-src="images/100000000000029A000002339A022B85.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051100000124125B34D0.png" width="649" height="146" style="display:inline-block; margin:4px;width:17.159cm;height:3.863cm;" class="odt-zoomable" data-zoom-src="images/100000000000051100000124125B34D0.png" /></td></tr></table>
 
 <ul>
-  <li>在[11]中，应用程序的首页在Eclipse的内置浏览器中显示。
+  <li>在 [8] [9] 中，在 Tomcat 7 服务器上运行 Web 项目 [10]，
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000029A000002339A022B85.png" width="333" height="281" style="display:inline-block; margin:4px;width:8.811cm;height:7.447cm;" class="odt-zoomable" data-zoom-src="images/100000000000029A000002339A022B85.png" /></td></tr></table>
+
+<ul>
+  <li>在 [11] 中，应用程序的首页将在 Eclipse 的内置浏览器中显示。
   </li>
 </ul>
 

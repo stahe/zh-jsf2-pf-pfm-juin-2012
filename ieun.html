@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -497,7 +499,7 @@
   <span class="md-ellipsis">
     
   
-    8. PrimeFaces Mobile 简介
+    8. Primefaces Mobile 简介
   
 
     
@@ -618,32 +620,32 @@
 
 
 
-<p><a id="refheading1267571553644564"></a></p>
+<p><span id="refheading1267571553644564" name="refheading1267571553644564" class="odt-bookmark-anchor"></span></p>
 <h1 id="11">11. <span style="color: #365f91">结论</span></h1>
-<p><span style="color: #000000">让我们总结一下本文所做的工作。我们介绍了三个 Web 框架：Java Server Faces、PrimeFaces 和 PrimeFaces Mobile，并将其应用于六个 Java EE 应用程序中：</span></p>
+<p><span style="color: #000000">让我们回顾一下本文所做的工作。我们介绍了三个Web框架：Java Server Faces、PrimeFaces和PrimeFaces Mobile，并将其应用于六个Java应用程序EE：</span></p>
 <ul>
   <li><span style="color: #000000">01：JSF / EJB3 / Glassfish，</span>
   </li>
-  <li><span style="color: #000000">02: JSF / Spring / Tomcat，</span>
+  <li><span style="color: #000000">02：JSF / Spring / Tomcat，</span>
   </li>
-  <li><span style="color: #000000">03: PF / EJB3 / Glassfish,</span>
+  <li><span style="color: #000000">03：PF / EJB3 / Glassfish，</span>
   </li>
-  <li><span style="color: #000000">04: PF / Spring / Tomcat,</span>
+  <li><span style="color: #000000">04：PF / Spring / Tomcat,</span>
   </li>
-  <li><span style="color: #000000">05: PFM / EJB3 / Glassfish,</span>
+  <li><span style="color: #000000">05：PFM / EJB3 / Glassfish,</span>
   </li>
-  <li><span style="color: #000000">06: PFM / Spring / Tomcat。</span>
+  <li><span style="color: #000000">06：PFM / Spring / Tomcat。</span>
   </li>
 </ul>
 
 <p><span style="color: #000000">在 EJB / Glassfish 环境中，示例应用程序的架构如下：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051800000112409E9AC4.png" width="652" height="137" style="display:inline-block; margin:4px;width:17.251cm;height:3.625cm;" class="odt-zoomable" data-zoom-src="images/100000000000051800000112409E9AC4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000051800000112409E9AC4.png" width="652" height="137" style="display:inline-block; margin:4px;width:17.251cm;height:3.625cm;" class="odt-zoomable" data-zoom-src="images/100000000000051800000112409E9AC4.png" /></td></tr></table>
 
-<p><span style="color: #000000">或者在 Spring/Tomcat 环境中的这个：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E00000010C56D73A82.png" width="624" height="134" style="display:inline-block; margin:4px;width:16.51cm;height:3.545cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E00000010C56D73A82.png" /></td></tr></table>
+<p><span style="color: #000000">或者在 Spring / Tomcat 环境中的架构如下：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E00000010C56D73A82.png" width="624" height="134" style="display:inline-block; margin:4px;width:16.51cm;height:3.545cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E00000010C56D73A82.png" /></td></tr></table>
 
-<p><span style="color: #000000">从第一个版本开始，我们就采用了分层架构。这一架构被延续到了所有后续版本中。最终，[Web] 层先后采用了 Java Server Faces、PrimeFaces 和 PrimeFaces Mobile 框架进行实现。该架构遵循 MVC（模型-视图-控制器）模式。</span></p>
-<p><span style="color: #000000">这是一个漫长的过程，仍有改进空间。在回顾时，我意识到当时做出的某些选择未必是最优的。我希望读者能将本文作为参考，在此基础上进行拓展。</span></p>
+<p><span style="color: #000000">我们从第一个版本开始就采用了分层架构。该架构被延续到了所有后续版本中。最后，[web]层先后基于Java Server Faces、Primefaces和Primefaces mobile框架进行了实现。它遵循MVC（模型-视图-控制器）模式。</span></p>
+<p><span style="color: #000000">这是一项耗时较长的工程，仍有改进空间。在重读时，我发现某些设计决策未必是最优的。我将这份文档留给读者自行研读，并期待大家在此基础上更进一步。</span></p>
 
 
 

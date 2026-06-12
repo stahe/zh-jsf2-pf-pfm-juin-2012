@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -397,10 +399,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#131-netbeans-ide" class="md-nav__link">
+  <a href="#131-ide-netbeans" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3.1. 安装 NetBeans IDE
+        1.3.1. 安装 IDE NetBeans
       
     </span>
   </a>
@@ -408,10 +410,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#132-eclipse-ide" class="md-nav__link">
+  <a href="#132-eclipse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3.2. 安装 Eclipse IDE
+        1.3.2. Eclipse 的安装
       
     </span>
   </a>
@@ -422,7 +424,7 @@
   <a href="#133-wampserver" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1.3.3. [ WampServer] 的安装
+        1.3.3. 安装 [WampServer]
       
     </span>
   </a>
@@ -618,7 +620,7 @@
   <span class="md-ellipsis">
     
   
-    8. PrimeFaces Mobile 简介
+    8. Primefaces Mobile 简介
   
 
     
@@ -729,88 +731,89 @@
 
 
 
-<p><a id="refheading1882601168461456"></a></p>
+<p><span id="refheading1882601168461456" name="refheading1882601168461456" class="odt-bookmark-anchor"></span></p>
 <h1 id="1">1. <span style="color: #365f91">简介</span></h1>
-<p><a id="refheading1433201675182081"></a></p>
+<p><span id="refheading1433201675182081" name="refheading1433201675182081" class="odt-bookmark-anchor"></span></p>
 <h2 id="11">1.1. <span style="color: #4f81bd">概述</span></h2>
-<p>该文件的PDF版本可&lt;<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQDikXb76n6fRb1wCVhMx0DcAfCgCjhOcFv7QAkFA2Y5g8k?e=X5VYab">在此处</a>&gt;下载。</p>
-<p>本文档中的示例可&lt;<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=ZczgRC">在此处</a>&gt;查看。</p>
-<p>在此，我们将通过示例 </p>
+<p>本文档的PDF为 |<a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQDikXb76n6fRb1wCVhMx0DcAfCgCjhOcFv7QAkFA2Y5g8k?e=GAYBgM">HERE</a>|。</p>
+<p>本文的示例可查阅 |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=1mrhRT">HERE</a>|。</p>
+<p>本文拟通过示例 </p>
 <ul>
-<li>介绍<strong>适用于桌面和</strong>移动应用的</li>
-<li>以及适用于桌面和移动应用的 <strong>PrimeFaces</strong> 组件库。</li>
+  <li><b>Java Server Faces 2</b> 框架（JSF2），
+  </li>
+  <li>以及适用于 JSF2 的 <b>PrimeFaces</b> 组件库，这些内容适用于桌面和移动应用程序。
+  </li>
 </ul>
-<p>本文档主要面向对 PrimeFaces 组件库 [<a href="http://www.primefaces.org/"><u><span style="color: #0563c1">http://www.primefaces.org</span></u></a>] 感兴趣的学生和开发人员。该框架提供了数十个支持 AJAX 的组件 [<a href="http://www.primefaces.org/showcase/ui/home.jsf"><u><span style="color: #0563c1">http://www.primefaces.org/showcase/ui/home.jsf</span></u></a>]，使您能够构建外观和操作体验类似于桌面应用程序的 Web 应用程序。 PrimeFaces 基于 JSF2 构建，因此有必要首先介绍该框架。PrimeFaces 还为移动设备提供了专用组件，我们也将对此进行讲解。</p>
-<p>为说明这一观点，我们将分别在不同环境中构建一个预约排程应用程序：</p>
+
+<p>本文主要面向对 PrimeFaces 和 [http://www.primefaces.org] 组件库感兴趣的学生和开发人员。该框架提供了数十个支持 AJAX 的 [http://www.primefaces.org/showcase/ui/home.jsf] 组件，可用于构建外观和行为与桌面应用程序相似的 Web 应用程序。 PrimeFaces 基于 JSF2 构建，因此有必要首先介绍该框架。此外，PrimeFaces 还提供了专门针对移动设备的组件，我们也将对此进行介绍。</p>
+<p>为说明我们的观点，我们将构建一个预约应用程序，并在不同环境中进行演示：</p>
 <ol>
-<li>基于 GlassFish 3.1 服务器，采用 JSF2 / EJB3 / JPA 技术的经典 Web 应用程序，</li>
+  <li>基于 Glassfish 3.1 服务器，采用 JSF2 / EJB3 / JPA 技术的经典 Web 应用程序，
+  </li>
+  <li>采用 PrimeFaces 技术实现的同款 AJAX 化应用，
+  </li>
+  <li>最后，采用 PrimeFaces Mobile 技术的移动版本。
+  </li>
 </ol>
-<ol start="2">
-  <li>基于 PrimeFaces 技术、支持 AJAX 的同款应用程序，
-  </li>
-  <li>最后，使用 PrimeFaces Mobile 技术构建的移动版本。
-  </li>
-</ol>
 
-<p>每次构建一个版本后，我们将将其部署到 Tomcat 7 服务器上的 JSF2 / Spring / JPA 环境中。因此，我们将构建六个 Java EE 应用程序。</p>
-<p>本文<strong>仅</strong>涵盖<strong>构建这些应用程序所需的必要内容</strong>。因此，请不要指望它面面俱到——您在这里找不到那样的内容。它也不是最佳实践的汇编。经验丰富的开发人员可能会发现，他们本可以采取不同的做法。我只是希望，本文也不会成为不良实践的汇编。</p>
-<p>若需进一步了解 JSF2 和 PrimeFaces，可参考以下链接：<a id="references"></a> :</p>
+<p>每次构建完一个版本后，我们将将其移植到 Tomcat 7 服务器上的 JSF2 / Spring / JPA 环境中。因此，我们将构建六个 EE Java 应用程序。</p>
+<p>本文<strong>档仅介绍构建这些应用程序所需的必要内容</strong>。因此，请勿期待其内容面面俱到——您也确实无法在此找到完整的解决方案。本文档亦非最佳实践汇编。经验丰富的开发人员可能会发现，他们本可以采取不同的做法。我仅希望本文档至少不是一份不良实践的汇编。</p>
+<p><span id="references" name="references" class="odt-bookmark-anchor"></span>若需深入了解 JSF2 和 PrimeFaces，可参考以下资料：</p>
 <ul>
-  <li><b>[ref1]: Java EE5 教程 </b>[<a href="http://java.sun.com/javaee/5/docs/tutorial/doc/index.html"><u><span style="color: #0563c1">http://java.sun.com/javaee/5/docs/tutorial/doc/index.HTML</span></u></a>]，这是 Sun 提供的学习 Java EE5 的参考资料。请阅读第二部分 [Web 层] 以了解 Web 技术，特别是 JSF。教程示例可供下载，它们以 NetBeans 项目的形式提供，可以直接加载并运行，
+  <li><b>[ref1]：Java EE5教程</b>[http://java.sun.com/javaee/5/docs/tutorial/doc/index.HTML]，这是Sun官方的Java入门参考资料EE5。 阅读II和[Web Tier]部分，以了解Web技术，特别是JSF。教程中的示例可供下载，它们以NetBeans项目形式提供，可加载并运行，
   </li>
-  <li><b>[ref2]: </b>David Geary 和 Cay S. Horstmann 合著的《<b>Core JavaServer Faces</b>》第三版，McGraw-Hill 出版，
+  <li><b>[ref2]：《Core Faces》</b>作者：David Geary 和 Cay S. Horstmann，第三版，McGraw-Hill 出版社，
   </li>
-  <li><b>[ref3]</b>: PrimeFaces 文档 [<a href="http://primefaces.googlecode.com/files/primefaces_users_guide_3_2.pdf"><u><span style="color: #0563c1">http://primefaces.googlecode.com/files/primefaces_users_guide_3_2.pdf</span></u></a>]，
+  <li><b>[ref3]</b>：PrimeFaces [http://primefaces.googlecode.com/files/primefaces_users_guide_3_2.pdf] 的文档，
   </li>
-  <li><b>[ref4]</b>: PrimeFaces Mobile 文档：[<a href="http://primefaces.googlecode.com/files/primefaces_mobile_users_guide_0_9_2.pdf"><u><span style="color: #0563c1">http://primefaces.googlecode.com/files/primefaces_mobile_users_guide_0_9_2.pdf</span></u></a>]。
+  <li><b>[ref4]</b>：PrimeFaces Mobile（[http://primefaces.googlecode.com/files/primefaces_mobile_users_guide_0_9_2.pdf]）的参考资料。
   </li>
 </ul>
 
-<p>我们偶尔会引用[<strong>ref2]</strong>，以提示读者可通过该书更深入地探讨相关主题。</p>
-<p>本文件旨在让尽可能广泛的读者群体能够理解。理解本文件所需的先决条件如下：</p>
+<p>我们有时会提及 [ref2]，以提示读者可通过该书深入了解相关领域。</p>
+<p>本文档的编写旨在让尽可能多的读者能够理解。理解本文档所需的先决条件如下：</p>
 <ul>
-  <li>具备Java语言知识，
+  <li>掌握 Java 语言，
   </li>
-  <li>具备Java EE开发的基础知识。
+  <li>掌握Java开发的基礎知識 EE。
   </li>
 </ul>
 
-<p>满足这些先决条件所需的所有资源均可从网站 [<a href="https://developpez.com/"><u><span style="color: #0563c1">https://developpez.com</span></u></a>] 获取。其中部分资源也可在网站 [<a href="https://stahe.github.io/"><u><span style="color: #0563c1">https://stahe.github.io</span></u></a>] 上找到：</p>
+<p>[http://developpez.com]网站提供了满足这些先决条件所需的所有资源。部分资源可在[http://tahe.developpez.com]网站上找到：</p>
 <ul>
-  <li><b>[ref5]：</b><a href="https://stahe.github.io/zh-servlets-java-juin-2002/"><u><span style="color: #0563c1">《Java Web 编程入门》</span></u></a>（2002年9月）：涵盖了 Java Web 编程的基础知识：<b>Servlet </b>和 <b>JSP 页面，</b>
+  <li><b>[ref5]：</b><a href="https://stahe.github.io/zh-servlets-java-juin-2002/"><u><b><span style="color: #000080">《基于Servlet和JSP页面的Java Web编程入门</span></b></u></a><u><b><span style="color: #0563c1">》</span></b></u><a href="https://stahe.github.io/en-servlets-java-juin-2002/"><u><b><span style="color: #0563c1">（2002）</span></b></u></a>（2002年9月）：介绍 Java Web 编程的基础知识：<b>Servlet 和网页 JSP，</b>
   </li>
-  <li><b>[ref6]：</b><a href="https://stahe.github.io/zh-java-web-mvc-mai-2006/"><u><span style="color: #0563c1">《Java MVC Web开发基础》</span></u></a>（2006年5月）[]：建议采用三层架构开发Web应用程序，其中Web层<b>实现MVC</b>（模型、视图、控制器）设计模式。
+  <li><b>[ref6]： </b><a href="https://stahe.github.io/zh-java-web-mvc-mai-2006/"><u><b><span style="color: #0563c1">通过实例学习Java MVC Web开发基础（2006）</span></b></u></a>（2006年5月）[ ]：建议采用三层架构开发Web应用程序，其中Web层实现设计模式（Design Pattern）<b>MVC</b>（模型、视图、控制器）。
   </li>
-  <li>[<b>ref7</b>]: <a href="https://stahe.github.io/zh-javaee-juin-2012/"><u><span style="color: #0563c1">《Java EE 5 入门》</span></u></a>（2012年1月）。
+  <li>[<b>ref7</b>]：<a href="https://stahe.github.io/zh-javaee-juin-2012/"><u><span style="color: #0563c1">使用 NetBeans IDE 和 GlassFish 应用服务器入门 Java EE (2012)</span></u></a>（2010年6月）。本文档帮助读者了解 <b>Java 1</b> 及 <b>Java 5</b>。
   </li>
-  <li>[<b>ref8</b>]: <a href="https://stahe.github.io/en-jpa-juin-2007/"><u><span style="color: #0563c1">《Java 持久化实践》</span></u></a>（2007年6月）。本文档介绍了如何使用 <b>JPA</b>（<b>Java 持久化 API</b>）进行数据持久化。
+  <li>[<b>ref8</b>]：<a href="https://stahe.github.io/zh-jpa-juin-2007/"><u><span style="color: #0563c1">Java 5 持久化实践指南 (2007)</span></u></a>（2007年6月）。本文档介绍了<b>如何使用JPA</b>（<b>Java持久化API</b>）实现数据持久化。
   </li>
-  <li>[<b>ref9</b>]：<a href="https://stahe.github.io/zh-webservice-netbeans-glassfish-fev-2009/"><u><span style="color: #0563c1">使用 NetBeans 和 GlassFish 服务器构建 Java EE Web 服务</span></u></a>（2009 年 1 月）。本文探讨了构建 Web 服务的过程。本文讨论的示例应用程序取自 [<b>ref9</b>]。
+  <li>[<b>ref9</b>]：<a href="https://stahe.github.io/zh-webservice-netbeans-glassfish-fev-2009/"><u><span style="color: #0563c1">使用 NetBeans 6.5 IDE 和 GlassFish Java EE 服务器构建 Java EE Web 服务 (2009)</span></u></a>（2009年1月）。本文档探讨了Web服务的构建过程。 本文所探讨的示例应用程序源自 [ref9]。
   </li>
 </ul>
 
-<p><a id="refheading1433221675182081"></a>
-<a id="exemples-document"></a>
-<a id="dossier-exemples"></a></p>
-<h2 id="12">1.2. <span style="color: #4f81bd">示例</span></h2>
-<p>本文中介绍的示例已作为兼容 NetBeans 和 Eclipse 的 Maven 项目发布；您可以在&lt;<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=ZczgRC">此处</a>&gt;下载它们</p>
-<p>：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DE000000E77F67D3C4.png" width="155" height="162" style="display:inline-block; margin:4px;width:4.11cm;height:4.277cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DE000000E77F67D3C4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p><span id="refheading1433221675182081" name="refheading1433221675182081" class="odt-bookmark-anchor"></span>
+<span id="exemples-document" name="exemples-document" class="odt-bookmark-anchor"></span>
+<span id="dossier-exemples" name="dossier-exemples" class="odt-bookmark-anchor"></span></p>
+<h2 id="12">1.2. <span style="color: #4f81bd"><strong>示例</strong></span></h2>
+<p>本文的示例可查阅 |<a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDIQmVhvWyKQ5JeFVh6trHFAckJ1TSSPQwLuUisQ5O0r54?e=1mrhRT">HERE</a>|：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000DE000000E77F67D3C4.png" width="155" height="162" style="display:inline-block; margin:4px;width:4.11cm;height:4.277cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DE000000E77F67D3C4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>要将项目导入 NetBeans：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000068A0000023216723942.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.041cm;" class="odt-zoomable" data-zoom-src="images/100000000000068A0000023216723942.png" /></td></tr></table>
+<p>要在 NetBeans 中导入项目：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000068A0000023216723942.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.041cm;" class="odt-zoomable" data-zoom-src="images/100000000000068A0000023216723942.png" /></td></tr></table>
 
 <ul>
   <li>在 [1] 中，打开一个项目，
   </li>
-  <li>在 [2] 中，在文件系统中选择要打开的项目，
+  <li>在 [2] 中，指定文件系统中要打开的项目，
   </li>
-  <li>在 [3] 中，项目即被打开。
+  <li>在 [3] 中，项目已打开。
   </li>
 </ul>
 
-<p>使用 Eclipse，</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004350000023E590AB225.png" width="539" height="287" style="display:inline-block; margin:4px;width:14.249cm;height:7.594cm;" class="odt-zoomable" data-zoom-src="images/10000000000004350000023E590AB225.png" /></td></tr></table>
+<p>在Eclipse中，</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004350000023E590AB225.png" width="539" height="287" style="display:inline-block; margin:4px;width:14.249cm;height:7.594cm;" class="odt-zoomable" data-zoom-src="images/10000000000004350000023E590AB225.png" /></td></tr></table>
 
 <ul>
   <li>在 [1] 中，导入一个项目，
@@ -819,166 +822,167 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000078900000214D7121E26.png" width="680" height="188" style="display:inline-block; margin:4px;width:17.997cm;height:4.964cm;" class="odt-zoomable" data-zoom-src="images/100000000000078900000214D7121E26.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000078900000214D7121E26.png" width="680" height="188" style="display:inline-block; margin:4px;width:17.997cm;height:4.964cm;" class="odt-zoomable" data-zoom-src="images/100000000000078900000214D7121E26.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000078F00000211ACAE7A90.png" width="680" height="186" style="display:inline-block; margin:4px;width:17.997cm;height:4.919cm;" class="odt-zoomable" data-zoom-src="images/100000000000078F00000211ACAE7A90.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000078F00000211ACAE7A90.png" width="680" height="186" style="display:inline-block; margin:4px;width:17.997cm;height:4.919cm;" class="odt-zoomable" data-zoom-src="images/100000000000078F00000211ACAE7A90.png" /></td></tr></table>
 
 <ul>
-  <li>在 [3] 中：您在文件系统中选择它，
+  <li>在 [3] 中：在文件系统中指定该项目，
   </li>
   <li>在 [4] 中：Eclipse 将其识别为 Maven 项目，
   </li>
-  <li>在 [5] 中，即导入后的项目。
+  <li>在 [5] 中，即导入的项目。
   </li>
 </ul>
 
-<p><a id="refheading99551454977699"></a></p>
+<p><span id="refheading99551454977699" name="refheading99551454977699" class="odt-bookmark-anchor"></span></p>
 <h2 id="13">1.3. <span style="color: #4f81bd">使用的工具</span></h2>
-<p>接下来，我们将使用（截至 2012 年 5 月）：</p>
+<p>接下来，我们将使用（2012年5月）：</p>
 <ul>
-  <li><b>NetBeans</b> 7.1.2 集成开发环境（IDE），可从 [<a href="http://www.netbeans.org/"><u><span style="color: #0563c1">http://www.netbeans.org</span></u></a>] 获取，
+  <li><b>NetBeans</b> 7.1.2（集成开发环境），可在 URL [http://www.netbeans.org] 处获取，
   </li>
-  <li>Eclipse Indigo IDE [<a href="http://www.eclipse.org/"><u><span style="color: #0563c1">http://www.eclipse.org/</span></u></a>]，其定制版为 <b>SpringSource Tool Suite </b>(STS) [<a href="http://www.springsource.com/developer/sts"><u><span style="color: #0563c1">http://www.springsource.com/developer/sts</span></u></a>]，
+  <li>IDE Eclipse Indigo [http://www.eclipse.org/]（其定制版为 <b>SpringSource 工具套件</b>（STS）[http://www.springsource.com/developer/sts]，
   </li>
-  <li><b>PrimeFaces</b> 3.2 版，可从 [<a href="http://primefaces.org/"><u><span style="color: #0563c1">http://primefaces.org/</span></u></a>] 下载，
+  <li><b>PrimeFaces</b>（3.2 版本）可在 URL [http://primefaces.org/] 中获取，
   </li>
-  <li><b>PrimeFaces Mobile</b> 0.9.2 版，可从 [<a href="http://primefaces.org/"><u><span style="color: #0563c1">http://primefaces.org/</span></u></a>] 获取，
+  <li><b>PrimeFaces Mobile</b> 0.9.2 版本，可在 URL [http://primefaces.org/] 中获取，
   </li>
-  <li>用于 MySQL 数据库的<b> WampServer </b>[<a href="http://www.wampserver.com/"><u><span style="color: #0563c1">http://www.wampserver.com/</span></u></a>]。
+  <li><b>WampServer</b> 适用于 SGBD、MySQL 和 [http://www.wampserver.com/]。
   </li>
 </ul>
 
-<p><a id="refheading78364566070260"></a></p>
-<h3 id="131-netbeans-ide">1.3.1. <span style="color: #4f81bd">安装 NetBeans IDE</span></h3>
-<p>本文将介绍 NetBeans 7.1.2 的安装，下载地址为 [<a href="http://netbeans.org/downloads/"><u><span style="color: #0563c1">http://netbeans.org/downloads/</span></u></a>]。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002560000020F9DBDB580.png" width="419" height="369" style="display:inline-block; margin:4px;width:11.081cm;height:9.765cm;" class="odt-zoomable" data-zoom-src="images/10000000000002560000020F9DBDB580.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p><span id="refheading78364566070260" name="refheading78364566070260" class="odt-bookmark-anchor"></span></p>
+<h3 id="131-ide-netbeans">1.3.1. <span style="color: #4f81bd">安装 IDE NetBeans</span></h3>
+<p>本文介绍 NetBeans 7.1.2 的安装，该版本可在 URL、[http://netbeans.org/downloads/] 中获取。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002560000020F9DBDB580.png" width="419" height="369" style="display:inline-block; margin:4px;width:11.081cm;height:9.765cm;" class="odt-zoomable" data-zoom-src="images/10000000000002560000020F9DBDB580.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p>您可以选择同时包含 GlassFish 3.1.2 和 Apache Tomcat 7.0.22 的 Java EE 版本。前者支持使用 EJB3（企业级 JavaBeans）开发 Java EE 应用程序，而后者则支持不使用 EJB 开发 Java EE 应用程序。随后，我们将用 Spring 框架 [<a href="http://www.springsource.com/"><u><span style="color: #0563c1">http://www.springsource.com/</span></u></a>] 替代 EJB。</p>
-<p>下载 NetBeans 安装程序后，请运行它。为此，您必须安装 JDK（Java 开发工具包）[<a href="http://www.oracle.com/technetwork/java/javase/overview/index.html"><u><span style="color: #0563c1">http://www.oracle.com/technetwork/java/javase/overview/index.HTML</span></u></a>]。除了 NetBeans 7.1.2 之外，还需安装：</p>
+<p>我们可以选择上述版本的 Java EE，其中包含 Glassfish 3.1.2 和 Apache Tomcat 7.0.22 两个服务器。 前者支持使用 EJB3（企业级 Java Bean）开发 Java 应用程序 EE，而后者支持在不使用 EJB 的情况下开发 Java 应用程序 EE。 随后我们将用 Spring 框架 [http://www.springsource.com/] 替换 EJB。</p>
+<p>下载 NetBeans 安装程序后，将其运行。为此需要安装 JDK（Java 开发工具包）和 [http://www.oracle.com/technetwork/java/javase/overview/index.HTML]。除了 NetBeans 7.1.2 之外，还将安装：</p>
 <ul>
   <li>用于单元测试的 JUnit 框架，
   </li>
-  <li>用于单元测试的 JUnit 框架，
+  <li>Glassfish 3.1.2 服务器，
   </li>
-  <li>用于单元测试的 JUnit 框架，Tomcat 7.0.22 服务器。
+  <li>Tomcat 7.0.22 服务器。
   </li>
 </ul>
 
 <p>安装完成后，启动 NetBeans：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007220000021C4FE4ACE3.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.322cm;" class="odt-zoomable" data-zoom-src="images/10000000000007220000021C4FE4ACE3.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007220000021C4FE4ACE3.png" width="680" height="201" style="display:inline-block; margin:4px;width:17.997cm;height:5.322cm;" class="odt-zoomable" data-zoom-src="images/10000000000007220000021C4FE4ACE3.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，NetBeans 7.1.2 显示三个标签页：
+  <li>在 [1] 中，NetBeans 7.1.2 包含三个标签页：
   </li>
-  <li>[项目] 标签页显示已打开的 NetBeans 项目；
+  <li>[Projects] 标签页显示已打开的 NetBeans 项目；
   </li>
-  <li>[文件] 选项卡显示构成当前打开的 NetBeans 项目的各种文件；
+  <li>[Files] 标签页显示构成当前打开的 NetBeans 项目的各个文件；
   </li>
-  <li>[服务] 选项卡汇总了 NetBeans 项目所使用的若干工具，
+  <li>[Services] 标签页汇集了 NetBeans 项目中使用的若干工具；
   </li>
-  <li>在 [2] 中，选择 [服务] 选项卡，并在 [3] 中选择 [服务器] 部分；
+  <li>在 [2] 中，激活 [Services] 选项卡，并在 [3] 中激活 [Servers] 分支，
   </li>
-  <li>在 [4] 中，启动 Tomcat 服务器以验证其是否安装正确，
+  <li>在 [4] 中，启动 Tomcat 服务器以验证其安装是否正确，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000768000002351735BA3A.png" width="680" height="203" style="display:inline-block; margin:4px;width:17.997cm;height:5.362cm;" class="odt-zoomable" data-zoom-src="images/1000000000000768000002351735BA3A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000768000002351735BA3A.png" width="680" height="203" style="display:inline-block; margin:4px;width:17.997cm;height:5.362cm;" class="odt-zoomable" data-zoom-src="images/1000000000000768000002351735BA3A.png" /></td></tr></table>
 
 <ul>
-  <li>在 [6] 中，于 [Apache Tomcat] 选项卡 [5] 中，可验证服务器是否已正确启动，
+  <li>在 [6] 中，通过 [Apache Tomcat] 和 [5] 选项卡，可验证服务器是否已正确启动，
   </li>
   <li>在 [7] 中，停止 Tomcat 服务器，
   </li>
 </ul>
 
-<p>按照相同的步骤验证 GlassFish 3.1.2 服务器是否已正确安装：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000076A0000022F67E74673.png" width="680" height="200" style="display:inline-block; margin:4px;width:17.997cm;height:5.3cm;" class="odt-zoomable" data-zoom-src="images/100000000000076A0000022F67E74673.png" /></td></tr></table>
+<p>按照相同步骤验证 Glassfish 3.1.2 服务器的安装是否成功：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000076A0000022F67E74673.png" width="680" height="200" style="display:inline-block; margin:4px;width:17.997cm;height:5.3cm;" class="odt-zoomable" data-zoom-src="images/100000000000076A0000022F67E74673.png" /></td></tr></table>
 
 <ul>
-  <li>在 [8] 中，启动 GlassFish 服务器，
+  <li>在 [8] 中，启动 Glassfish 服务器，
   </li>
   <li>在 [9] 中，验证其是否已正确启动，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000221000002170D8AF1BB.png" width="273" height="268" style="display:inline-block; margin:4px;width:7.211cm;height:7.078cm;" class="odt-zoomable" data-zoom-src="images/1000000000000221000002170D8AF1BB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000221000002170D8AF1BB.png" width="273" height="268" style="display:inline-block; margin:4px;width:7.211cm;height:7.078cm;" class="odt-zoomable" data-zoom-src="images/1000000000000221000002170D8AF1BB.png" /></td></tr></table>
 
 <ul>
-  <li>在 [10] 中，将其停止。
+  <li>在 [10] 时，将其停止。
   </li>
 </ul>
 
-<p>现在我们已经拥有了一个功能齐全的集成开发环境（IDE）。我们可以开始构建项目了。在处理这些项目的过程中，我们将逐步探索该IDE的各项功能。</p>
-<p>接下来，我们将安装 Eclipse IDE，并在其中注册刚刚下载的两台服务器——Tomcat 7 和 GlassFish 3.1.2。为此，我们需要知道这两台服务器的安装目录。这些信息可以在这两台服务器的属性中找到：</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000670000002C91250A8B5.png" width="680" height="294" style="display:inline-block; margin:4px;width:17.997cm;height:7.786cm;" class="odt-zoomable" data-zoom-src="images/1000000000000670000002C91250A8B5.png" /></td></tr></table>
+<p>现在我们有一个可运行的 IDE。我们可以开始构建项目了。根据这些项目，我们将详细介绍 IDE 的不同特性。</p>
+<p>接下来我们将安装 IDE Eclipse，并在其中注册刚刚下载的 Tomcat 7 和 Glassfish 3.1.2 这两台服务器。为此，我们需要了解这两台服务器的安装目录。这些信息可在两台服务器的属性中找到：</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000670000002C91250A8B5.png" width="680" height="294" style="display:inline-block; margin:4px;width:17.997cm;height:7.786cm;" class="odt-zoomable" data-zoom-src="images/1000000000000670000002C91250A8B5.png" /></td></tr></table>
 
 <ul>
-  <li>在 [1] 中，Tomcat 7 的安装文件夹为，
+  <li>在 [1] 中，Tomcat 7 的安装目录为，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000036A00000204F3716BDE.png" width="437" height="258" style="display:inline-block; margin:4px;width:11.562cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/100000000000036A00000204F3716BDE.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000036A00000204F3716BDE.png" width="437" height="258" style="display:inline-block; margin:4px;width:11.562cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/100000000000036A00000204F3716BDE.png" /></td></tr></table>
 
 <ul>
-  <li>在 [2] 中，GlassFish 服务器的域文件夹。在 Eclipse 中注册 GlassFish 时，您只需提供以下信息 [D:\Programs\devjava\Glassfish\glassfish-3.1.2\glassfish]。
-  </li>
-</ul>
-<p><a id="refheading78366566070260"></a></p>
-<h3 id="132-eclipse-ide">1.3.2. <span style="color: #4f81bd">安装 Eclipse IDE</span></h3>
-<p>尽管本文档中使用的 IDE 并非 Eclipse，但我们仍将介绍其安装方法。这是因为文档中的示例也以 Eclipse 的 Maven 项目形式提供。Eclipse 默认未预装 Maven。 为此，您必须安装一个插件。与其安装一个基础版的 Eclipse，我们 将安装 <strong>SpringSource Tool Suite</strong> [<a href="http://www.springsource.com/developer/sts"><u><span style="color: #0563c1">http://www.springsource.com/developer/sts</span></u></a>]，这是一个预装了大量与 Spring 框架相关插件以及预配置好 Maven 的 Eclipse 版本。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006C40000032EEF303571.png" width="680" height="320" style="display:inline-block; margin:4px;width:17.997cm;height:8.458cm;" class="odt-zoomable" data-zoom-src="images/10000000000006C40000032EEF303571.png" /></td></tr></table>
-
-<ul>
-  <li>请访问  <b>SpringSource Tool Suite </b>(STS) 网站 [1] 下载 STS 的最新版本 [2A] [2B]。
+  <li>在 [2] 中，Glassfish 服务器的域名文件夹。在 Eclipse 的 Glassfish 配置中，只需提供以下信息：[D:\Programs\devjava\Glassfish\glassfish-3.1.2\glassfish]。
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000073C000001845F031E1E.png" width="680" height="142" style="display:inline-block; margin:4px;width:17.997cm;height:3.769cm;" class="odt-zoomable" data-zoom-src="images/100000000000073C000001845F031E1E.png" /></td></tr></table>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000082A000003701E1ABF62.png" width="680" height="286" style="display:inline-block; margin:4px;width:17.997cm;height:7.578cm;" class="odt-zoomable" data-zoom-src="images/100000000000082A000003701E1ABF62.png" /></td></tr></table>
-
-<ul>
-  <li>下载的文件是一个安装程序，它会创建文件目录结构 [3A] [3B]。在 [4] 中，我们启动可执行文件，
-  </li>
-  <li>在[5]中，关闭欢迎窗口后显示的IDE工作区。在[6]中，显示应用服务器窗口，
-  </li>
-</ul>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000078E000003F138BD131F.png" width="680" height="355" style="display:inline-block; margin:4px;width:17.997cm;height:9.389cm;" class="odt-zoomable" data-zoom-src="images/100000000000078E000003F138BD131F.png" /></td></tr></table>
+<p><span id="refheading78366566070260" name="refheading78366566070260" class="odt-bookmark-anchor"></span></p>
+<h3 id="132-eclipse">1.3.2. <span style="color: #4f81bd">Eclipse 的安装</span></h3>
+<p>尽管本文档中使用的并非 Eclipse，但我们仍将介绍其安装过程。实际上，文档中的示例也以 Eclipse 的 Maven 项目形式提供。Eclipse 本身并未预集成 Maven。 为此需要安装一个插件。与其安装原版Eclipse，我们将安装<strong>SpringSource工具套</strong>件[http://www.springsource.com/developer/sts]，该版本的Eclipse预装了大量与Spring框架相关的插件，同时也预装了Maven配置。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006C40000032EEF303571.png" width="680" height="320" style="display:inline-block; margin:4px;width:17.997cm;height:8.458cm;" class="odt-zoomable" data-zoom-src="images/10000000000006C40000032EEF303571.png" /></td></tr></table>
 
 <ul>
-  <li>在[7]中，显示服务器窗口。已注册一台服务器，这是一台VMware服务器，我们不会使用它。在[8]中，我们调用添加新服务器的向导，
+  <li>访问 <b>SpringSource Tool Suite</b> 网站 (STS) [1]，以下载 STS [2A] [2B] 的最新版本，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000061A000003A6519CD371.png" width="680" height="407" style="display:inline-block; margin:4px;width:17.997cm;height:10.761cm;" class="odt-zoomable" data-zoom-src="images/100000000000061A000003A6519CD371.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000073C000001845F031E1E.png" width="680" height="142" style="display:inline-block; margin:4px;width:17.997cm;height:3.769cm;" class="odt-zoomable" data-zoom-src="images/100000000000073C000001845F031E1E.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000082A000003701E1ABF62.png" width="680" height="286" style="display:inline-block; margin:4px;width:17.997cm;height:7.578cm;" class="odt-zoomable" data-zoom-src="images/100000000000082A000003701E1ABF62.png" /></td></tr></table>
 
 <ul>
-  <li>在[9A]处，系统提供了多种服务器选项。我们选择安装Apache Tomcat 7服务器[9B]，
+  <li>下载的文件是一个安装程序，它会生成文件树 [3A] [3B]。在 [4] 中，运行可执行文件，
+  </li>
+  <li>在 [5] 中，关闭欢迎窗口后显示 IDE 的工作窗口。在 [6] 中，显示应用程序服务器窗口，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007740000023649ED67E1.png" width="680" height="202" style="display:inline-block; margin:4px;width:17.997cm;height:5.339cm;" class="odt-zoomable" data-zoom-src="images/10000000000007740000023649ED67E1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000078E000003F138BD131F.png" width="680" height="355" style="display:inline-block; margin:4px;width:17.997cm;height:9.389cm;" class="odt-zoomable" data-zoom-src="images/100000000000078E000003F138BD131F.png" /></td></tr></table>
 
 <ul>
-  <li>在 [10] 中，我们指定了随 NetBeans 安装的 Tomcat 7 服务器的安装目录。如果您没有 Tomcat 服务器，请使用 [11] 按钮，
+  <li>在 [7] 中，显示服务器窗口。已注册一台服务器。这是一台 VMware 服务器，我们不会使用它。在 [8] 中，调用添加新服务器的向导，
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000061A000003A6519CD371.png" width="680" height="407" style="display:inline-block; margin:4px;width:17.997cm;height:10.761cm;" class="odt-zoomable" data-zoom-src="images/100000000000061A000003A6519CD371.png" /></td></tr></table>
+
+<ul>
+  <li>在 [9A] 中，系统提供了多种服务器选项。我们选择安装 Apache 的 Tomcat 7 服务器 [9B]，
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007740000023649ED67E1.png" width="680" height="202" style="display:inline-block; margin:4px;width:17.997cm;height:5.339cm;" class="odt-zoomable" data-zoom-src="images/10000000000007740000023649ED67E1.png" /></td></tr></table>
+
+<ul>
+  <li>在 [10] 中，我们指定了随 NetBeans 安装的 Tomcat 7 服务器的安装目录。如果没有 Tomcat 服务器，请使用按钮 [11]，
   </li>
   <li>在 [12] 中，Tomcat 服务器将出现在 [Servers] 窗口中，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007C00000029E6F87BFF7.png" width="680" height="230" style="display:inline-block; margin:4px;width:17.997cm;height:6.078cm;" class="odt-zoomable" data-zoom-src="images/10000000000007C00000029E6F87BFF7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007C00000029E6F87BFF7.png" width="680" height="230" style="display:inline-block; margin:4px;width:17.997cm;height:6.078cm;" class="odt-zoomable" data-zoom-src="images/10000000000007C00000029E6F87BFF7.png" /></td></tr></table>
 
 <ul>
   <li>在 [13] 中，我们启动服务器，
   </li>
-  <li>在 [14] 中，服务器正在运行，
+  <li>在 [14] 中，服务器已启动，
   </li>
-  <li>在 [15] 中，我们停止它。
+  <li>在 [15] 中，将其停止。
   </li>
 </ul>
 
-<p>如果一切正常，在 [Console] 窗口中，您应该看到以下 Tomcat 日志：</p>
+<p>在 [Console] 窗口中，如果一切正常，将获得以下 Tomcat 日志：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1019,100 +1023,100 @@
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="n">mai</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span><span class="w"> </span><span class="mi">2012</span><span class="w"> </span><span class="mi">8</span><span class="p">:</span><span class="mi">56</span><span class="p">:</span><span class="mi">57</span><span class="w"> </span><span class="n">AM</span><span class="w"> </span><span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">catalina</span><span class="p">.</span><span class="n">startup</span><span class="p">.</span><span class="n">Catalina</span><span class="w"> </span><span class="n">start</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="n">Infos</span><span class="p">:</span><span class="w"> </span><span class="n">Server</span><span class="w"> </span><span class="n">startup</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="mi">2252</span><span class="w"> </span><span class="n">ms</span>
 </code></pre></div></td></tr></table></div>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000072E000001D13083DF14.png" width="680" height="172" style="display:inline-block; margin:4px;width:17.997cm;height:4.553cm;" class="odt-zoomable" data-zoom-src="images/100000000000072E000001D13083DF14.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000072E000001D13083DF14.png" width="680" height="172" style="display:inline-block; margin:4px;width:17.997cm;height:4.553cm;" class="odt-zoomable" data-zoom-src="images/100000000000072E000001D13083DF14.png" /></td></tr></table>
 
 <ul>
   <li>仍在 [Servers] 窗口中，添加一个新服务器 [16]，
   </li>
-  <li>在[17]处，Glassfish服务器未列出，
+  <li>在 [17] 中，Glassfish 服务器未被列出，
   </li>
   <li>此时，请使用链接 [18]，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007A6000001F3BF2CF4D1.png" width="680" height="173" style="display:inline-block; margin:4px;width:17.997cm;height:4.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A6000001F3BF2CF4D1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007A6000001F3BF2CF4D1.png" width="680" height="173" style="display:inline-block; margin:4px;width:17.997cm;height:4.588cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A6000001F3BF2CF4D1.png" /></td></tr></table>
 
 <ul>
-  <li>在 [19] 中，选择为 GlassFish 服务器添加适配器，
+  <li>在 [19] 中，选择为 Glassfish 服务器添加适配器，
   </li>
-  <li>下载完成后，返回 [Servers] 窗口，添加新服务器，
+  <li>该适配器下载完成后，返回 [Servers] 窗口，添加新服务器，
   </li>
-  <li>此时在[21]中，GlassFish服务器已被列出，
+  <li>此时在 [21] 中，系统会提供 Glassfish 服务器选项，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B3000002BAEC0852D5.png" width="680" height="241" style="display:inline-block; margin:4px;width:17.997cm;height:6.373cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B3000002BAEC0852D5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B3000002BAEC0852D5.png" width="680" height="241" style="display:inline-block; margin:4px;width:17.997cm;height:6.373cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B3000002BAEC0852D5.png" /></td></tr></table>
 
 <ul>
-  <li>在 [22] 中，选择随 NetBeans 一起下载的 GlassFish 3.1.2 服务器，
+  <li>在 [22] 中，选择随 NetBeans 一起下载的 Glassfish 3.1.2 服务器，
   </li>
-  <li>在 [23] 中，指定 GlassFish 3.1.2 的安装文件夹（请注意 [24] 中显示的路径），
+  <li>在 [23] 步骤中，指定 Glassfish 3.1.2 的安装目录（请注意 [24] 中显示的路径），
   </li>
-  <li>如果您没有 GlassFish 服务器，请使用 [25] 按钮，
+  <li>若未安装 Glassfish 服务器，请使用按钮 [25]，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B40000016A98589663.png" width="680" height="125" style="display:inline-block; margin:4px;width:17.997cm;height:3.304cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B40000016A98589663.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B40000016A98589663.png" width="680" height="125" style="display:inline-block; margin:4px;width:17.997cm;height:3.304cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B40000016A98589663.png" /></td></tr></table>
 
 <ul>
-  <li>在 [26] 中，向导会要求输入 GlassFish 服务器管理员密码。首次安装时，该密码通常为 <i>adminadmin</i>，
+  <li>在 [26] 步骤中，向导会要求输入 Glassfish 服务器的管理员密码。首次安装时，通常为 adminadmin，
   </li>
-  <li>向导完成后，GlassFish 服务器将出现在 [服务器] 窗口 [27] 中，
+  <li>当向导完成后，在 [Servers] 窗口中，Glassfish 服务器将显示为 [27]，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B90000027830BBA770.png" width="680" height="217" style="display:inline-block; margin:4px;width:17.997cm;height:5.754cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B90000027830BBA770.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B90000027830BBA770.png" width="680" height="217" style="display:inline-block; margin:4px;width:17.997cm;height:5.754cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B90000027830BBA770.png" /></td></tr></table>
 
 <ul>
   <li>在 [28] 中，启动它，
   </li>
-  <li>在 [29] 中，可能会出现问题。这取决于安装过程中提供的信息。GlassFish 需要 JDK（Java 开发工具包），而非 JRE（Java 运行时环境），
+  <li>在 [29] 中可能会出现问题。这取决于安装时提供的信息。Glassfish 需要 JDK（Java 开发工具包），而不是 JRE（Java 运行时环境），
   </li>
-  <li>要访问 GlassFish 服务器属性，请在 [Servers] 窗口中双击它，
+  <li>要访问 Glassfish 服务器的属性，请在 [Servers] 窗口中双击它，
   </li>
-  <li>这将打开 [20] 窗口；在那里，点击 [运行时环境] 链接，
-  </li>
-</ul>
-
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000746000001EDA6246AE7.png" width="680" height="180" style="display:inline-block; margin:4px;width:17.997cm;height:4.764cm;" class="odt-zoomable" data-zoom-src="images/1000000000000746000001EDA6246AE7.png" /></td></tr></table>
-
-<ul>
-  <li>在 [31] 中，我们将用 JDK 替换默认的 JRE。要执行此操作，请使用 [32] 链接，
-  </li>
-  <li>在 [33] 中，列出了机器上已安装的 JRE，
-  </li>
-  <li>在 [34] 中，添加另一个，
+  <li>随后将打开 [20] 窗口，在其中点击 [Runtime Environment] 链接，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000705000001A097CC1980.png" width="680" height="157" style="display:inline-block; margin:4px;width:17.997cm;height:4.166cm;" class="odt-zoomable" data-zoom-src="images/1000000000000705000001A097CC1980.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000746000001EDA6246AE7.png" width="680" height="180" style="display:inline-block; margin:4px;width:17.997cm;height:4.764cm;" class="odt-zoomable" data-zoom-src="images/1000000000000746000001EDA6246AE7.png" /></td></tr></table>
 
 <ul>
-  <li>在 [35] 中，选择 [标准虚拟机] (Virtual Machine)，
+  <li>在 [31] 中，我们将默认使用的 JRE 替换为 JDK。为此，我们使用链接 [32]，
   </li>
-  <li>在 [36] 中，选择一个 JDK（&gt;=1.6），
+  <li>在 [33] 中，将机器上已安装的 JRE，
   </li>
-  <li>在 [37] 中，为新的 JRE 输入一个名称，
+  <li>在 [34] 中，再添加一个，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B600000254AE452154.png" width="680" height="205" style="display:inline-block; margin:4px;width:17.997cm;height:5.435cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B600000254AE452154.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000705000001A097CC1980.png" width="680" height="157" style="display:inline-block; margin:4px;width:17.997cm;height:4.166cm;" class="odt-zoomable" data-zoom-src="images/1000000000000705000001A097CC1980.png" /></td></tr></table>
 
 <ul>
-  <li>返回 GlassFish 的 JRE 选择界面，选择 [38] 中指定的新 JRE，
+  <li>在 [35] 中，选择 [Standard VM]（虚拟机），
   </li>
-  <li>配置向导完成后，重启 [GlassFish] [39]，
+  <li>在 [36] 中，选择 JDK (&gt;=1.6)，
   </li>
-  <li>在 [40] 中，它将启动，
+  <li>在 [37] 中，将新文件命名为 JRE，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007BB000001A81F0AF8A3.png" width="680" height="146" style="display:inline-block; margin:4px;width:17.997cm;height:3.856cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BB000001A81F0AF8A3.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007B600000254AE452154.png" width="680" height="205" style="display:inline-block; margin:4px;width:17.997cm;height:5.435cm;" class="odt-zoomable" data-zoom-src="images/10000000000007B600000254AE452154.png" /></td></tr></table>
 
 <ul>
-  <li>在 [41] 中，显示服务器目录树，
+  <li>回到针对 Glassfish 的 JRE 选择界面，我们选择新声明的 JRE（即 [38]），
   </li>
-  <li>在 [42] 中，我们访问 GlassFish 日志：
+  <li>配置向导完成后，重新启动 [Glassfish] 和 [39]，
+  </li>
+  <li>在 [40] 中，它已启动，
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000007BB000001A81F0AF8A3.png" width="680" height="146" style="display:inline-block; margin:4px;width:17.997cm;height:3.856cm;" class="odt-zoomable" data-zoom-src="images/10000000000007BB000001A81F0AF8A3.png" /></td></tr></table>
+
+<ul>
+  <li>在 [41] 中，显示服务器目录结构，
+  </li>
+  <li>在 [42] 中，访问 Glassfish 日志：
   </li>
 </ul>
 
@@ -1142,39 +1146,39 @@
 <a id="__codelineno-1-12" name="__codelineno-1-12"></a>
 <a id="__codelineno-1-13" name="__codelineno-1-13"></a>Infos: JMX005: JMXStartupService had Started JMXConnector on JMXService URL service:jmx:rmi://Gportpers3.ad.univ-angers.fr:8686/jndi/rmi://Gportpers3.ad.univ-angers.fr:8686/jmxrmi
 </code></pre></div></td></tr></table></div>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000285000001F32C78F518.png" width="323" height="250" style="display:inline-block; margin:4px;width:8.534cm;height:6.602cm;" class="odt-zoomable" data-zoom-src="images/1000000000000285000001F32C78F518.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000285000001F32C78F518.png" width="323" height="250" style="display:inline-block; margin:4px;width:8.534cm;height:6.602cm;" class="odt-zoomable" data-zoom-src="images/1000000000000285000001F32C78F518.png" /></td></tr></table>
 
 <ul>
-  <li>在[43]中，我们停止了Glassfish服务器。
+  <li>在 [43] 中，我们停止 Glassfish 服务器。
   </li>
 </ul>
 
-<p><a id="refheading78368566070260"></a>
-<a id="wampserver"></a></p>
-<h3 id="133-wampserver">1.3.3. <span style="color: #4f81bd">[ WampServer] 的安装</span></h3>
-<p>[WampServer] 是一套用于在 Windows 系统上进行 PHP/MySQL/Apache 开发的软件套件。我们将仅将其用于 MySQL 数据库管理系统。</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000079000000289216D1732.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.033cm;" class="odt-zoomable" data-zoom-src="images/100000000000079000000289216D1732.png" /></td></tr></table>
+<p><span id="refheading78368566070260" name="refheading78368566070260" class="odt-bookmark-anchor"></span>
+<span id="wampserver" name="wampserver" class="odt-bookmark-anchor"></span></p>
+<h3 id="133-wampserver">1.3.3. <span style="color: #4f81bd"><strong>安装 [WampServer]</strong></span></h3>
+<p>[WampServer]是一套用于在Windows机器上基于PHP / MySQL / Apache进行开发的软件包。 我们将仅将其用于 SGBD 和 MySQL。</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000079000000289216D1732.png" width="680" height="228" style="display:inline-block; margin:4px;width:17.997cm;height:6.033cm;" class="odt-zoomable" data-zoom-src="images/100000000000079000000289216D1732.png" /></td></tr></table>
 
 <ul>
-  <li>在 [WampServer] 网站 [1] 上，选择合适的版本 [2]，
+  <li>在 [WampServer] [1] 网站上，选择合适的版本 [2]，
   </li>
-  <li>下载的可执行文件是一个安装程序。安装过程中会要求提供各种信息。这些信息与 MySQL 无关，因此可以忽略。安装结束时会出现窗口 [3]。启动 [WampServer]，
+  <li>下载的可执行文件是一个安装程序。安装过程中会要求提供各种信息。这些信息与MySQL无关，因此可以忽略。 安装完成后将显示 [3] 窗口。运行 [WampServer]，
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000035B000002A71AD9FCA1.png" width="430" height="340" style="display:inline-block; margin:4px;width:11.365cm;height:8.983cm;" class="odt-zoomable" data-zoom-src="images/100000000000035B000002A71AD9FCA1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000035B000002A71AD9FCA1.png" width="430" height="340" style="display:inline-block; margin:4px;width:11.365cm;height:8.983cm;" class="odt-zoomable" data-zoom-src="images/100000000000035B000002A71AD9FCA1.png" /></td></tr></table>
 
 <ul>
-  <li>在 [4] 中，[WampServer] 图标会出现在屏幕右下角的任务栏中 [4]，
+  <li>在 [4] 中，[WampServer] 的图标将安装在屏幕右下角的任务栏中 [4]，
   </li>
-  <li>点击它后，会出现 [5] 菜单。该菜单允许您管理 Apache 服务器和 MySQL 数据库管理系统。要管理后者，请使用 [PhpMyAdmin] 选项，
+  <li>点击该图标后，将显示菜单 [5]。该菜单用于管理 Apache 服务器以及 SGBD 和 MySQL。 要管理该服务器，请使用选项 [PhpPmyAdmin]，
   </li>
-  <li>这将打开如下所示的窗口，
+  <li>此时将显示如下窗口，
   </li>
 </ul>
 
 <p><img src="images/10000000000003C600000186DE03B7E4.png" width="670" height="271" style="width:17.729cm;height:7.158cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003C600000186DE03B7E4.png" /></p>
-<p>本文将简要介绍 [PhpMyAdmin] 的使用方法。我们将仅演示如何使用它为本教程中的示例应用程序创建数据库。</p>
+<p>关于 [PhpMyAdmin] 的使用，我们将不做过多详细说明。我们仅演示如何使用它来创建本教程示例应用程序的数据库。</p>
 
 
 

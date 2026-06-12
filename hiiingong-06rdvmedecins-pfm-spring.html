@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -499,7 +501,7 @@
   <span class="md-ellipsis">
     
   
-    8. PrimeFaces Mobile 简介
+    8. Primefaces Mobile 简介
   
 
     
@@ -631,7 +633,7 @@
   <a href="#103-eclipse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.3. 基于 Eclipse 的测试
+        10.3. 使用 Eclipse 进行测试
       
     </span>
   </a>
@@ -642,7 +644,7 @@
   <a href="#104" class="md-nav__link">
     <span class="md-ellipsis">
       
-        10.4. 在移动设备上进行测试
+        10.4. 移动端测试
       
     </span>
   </a>
@@ -701,69 +703,50 @@
 
 
 
-<p><a id="refheading1882601168461456-copie-2"></a>
-<a id="refheading1433241675182081-copie-2"></a>
-<a id="refheading1882601168461456-copie-1-copie-1"></a>
-<a id="refheading1433241675182081-copie-1-copie-1"></a>
-<a id="refheading73496604163464-copie-1"></a>
-<a id="refheading7741030114625-copie-1"></a>
-<a id="refheading7745230114625-copie-1"></a>
-<a id="refheading10509310005176-copie-1"></a>
-<a id="refheading10512310005176-copie-1"></a>
-<a id="refheading1267331553644564-copie-1"></a>
-<a id="refheading1882601168461456-copie-2-copie-1"></a>
-<a id="refheading1433241675182081-copie-2-copie-1"></a>
-<a id="refheading73496604163464-copie-1-copie-1"></a>
-<a id="refheading7741030114625-copie-1-copie-1"></a>
-<a id="refheading7745230114625-copie-1-copie-1"></a>
-<a id="refheading10509310005176-copie-1-copie-1"></a>
-<a id="refheading10512310005176-copie-1-copie-1"></a>
-<a id="refheading1267331553644564-copie-1-copie-1"></a>
-<a id="refheading1267531553644564-copie-1"></a>
-<a id="refheading105123100051761"></a></p>
+<p><span id="refheading105123100051761" name="refheading105123100051761" class="odt-bookmark-anchor"></span></p>
 <h1 id="10-06rdvmedecins-pfm-spring">10. <span style="color: #365f91">示例应用-06：rdvmedecins-pfm-spring</span></h1>
-<p><a id="refheading105125100051761"></a></p>
+<p><span id="refheading105125100051761" name="refheading105125100051761" class="odt-bookmark-anchor"></span></p>
 <h2 id="101">10.1. <span style="color: #4f81bd">移植</span></h2>
-<p><span style="color: #000000">现在我们将把前一个应用程序移植到 Spring/Tomcat 环境中：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E90000011A5052F9EC.png" width="629" height="141" style="display:inline-block; margin:4px;width:16.63cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E90000011A5052F9EC.png" /></td></tr></table>
+<p><span style="color: #000000">现在我们将前一个应用程序移植到 Spring / Tomcat 环境中：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004E90000011A5052F9EC.png" width="629" height="141" style="display:inline-block; margin:4px;width:16.63cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E90000011A5052F9EC.png" /></td></tr></table>
 
-<p><span style="color: #000000">我们将基于两个已编写好的应用程序。我们将使用：</span></p>
+<p><span style="color: #000000">我们将基于两个已编写的应用程序。我们将使用：</span></p>
 <ul>
-  <li><span style="color: #000000">来自 JSF / Spring 0.2 版本的 [DAO] 和 [JPA] 层，</span>
+  <li><span style="color: #000000">02 版本的 [DAO] 和 [JPA] 层JSF / Spring，</span>
   </li>
-  <li><span style="color: #000000">来自 PFM / EJB 05 版的 [web] / Primefaces Mobile 层，</span>
+  <li><span style="color: #000000">来自 05 版 PFM / EJB 的 [web] / Primefaces mobile 层，</span>
   </li>
-  <li><span style="color: #000000">来自 02 版的 Spring 配置文件</span>
+  <li><span style="color: #000000">Spring 配置文件（版本 02）</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">此处的操作与将 JSF2 / EJB / Glassfish 应用程序移植到 JSF2 / Spring Tomcat 环境时的操作类似。因此，我们将减少相关说明。如有需要，读者可参考该移植案例。</span></p>
-<p><span style="color: #000000">我们将移植所需的所有项目放置在一个新文件夹 [rdvmedecins-pfm-spring] [1] 中：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E0000012E8297FB7D.png" width="647" height="151" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
+<p><span style="color: #000000">此处我们进行的工作与之前将 JSF2 / EJB / Glassfish 应用程序移植到 JSF2 / Spring Tomcat 环境时类似。因此我们将减少说明。 如有需要，读者可参考该移植案例。</span></p>
+<p><span style="color: #000000">我们将移植所需的所有项目都放在了一个新的文件夹 [rdvmedecins-pfm-spring] [1] 中：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000050E0000012E8297FB7D.png" width="647" height="151" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa]：JSF/Spring 02 版本的 [DAO] 和 [JPA] 层，</span>
+  <li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa]：02版[DAO]和[JPA]的层，以及JSF / Spring，</span>
   </li>
-  <li><span style="color: #000000">[mv-rdvmedecins-spring-metier]：JSF/Spring 02 版本的 [业务] 层，</span>
+  <li><span style="color: #000000">[mv-rdvmedecins-spring-metier]：02版[métier]的层，JSF / Spring，</span>
   </li>
-  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile]：PrimeFaces Mobile / EJB 05 版本的 [Web] 层，</span>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile]：05版Primefaces mobile的[web]层 / EJB，</span>
   </li>
   <li><span style="color: #000000">在 [2] 中，我们将它们导入 NetBeans，</span>
   </li>
   <li><span style="color: #000000">在 [3] 中，Web 项目的依赖关系不再正确：</span>
     <ul>
-      <li><span style="color: #000000">[DAO]、[JPA] 和 [业务] 层的依赖关系必须修改为指向 Spring 项目；</span>
+      <li><span style="color: #000000">针对 [DAO]、[JPA]、[métier] 层的依赖关系必须修改，使其现在指向 Spring 项目；</span>
       </li>
-      <li><span style="color: #000000">GlassFish 服务器曾提供 JSF 库。但在 Tomcat 服务器中已不再如此。因此必须将这些库添加到依赖项中。</span>
+      <li><span style="color: #000000">Glassfish 服务器曾提供 JSF 的库。但在 Tomcat 服务器上已不再提供。因此必须将其添加到依赖项中。</span>
       </li>
     </ul>
   </li>
 </ul>
 
-<p><span style="color: #000000">[Web] 项目的演变过程如下：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002010000018764250CA2.png" width="257" height="196" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
+<p><span style="color: #000000">[web] 项目的变更如下：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002010000018764250CA2.png" width="257" height="196" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
 
-<p><span style="color: #000000">[web] 层的 [pom.xml] 文件现在包含以下依赖项：</span></p>
+<p><span style="color: #000000">[web] 层中的 [pom.xml] 文件现具有以下依赖项：</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
@@ -801,34 +784,34 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">出现了错误。这些错误是由 [web] 层中的 EJB 引用引起的。让我们先检查一下 [Application] Bean：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000481000002522F8AF1C3.png" width="577" height="297" style="display:inline-block; margin:4px;width:15.254cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000481000002522F8AF1C3.png" /></td></tr></table>
+<p><span style="color: #000000">出现了错误。这些错误是由 [web] 层中的 EJB 引用引起的。首先让我们研究一下 [Application] Bean：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000481000002522F8AF1C3.png" width="577" height="297" style="display:inline-block; margin:4px;width:15.254cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000481000002522F8AF1C3.png" /></td></tr></table>
 
-<p><span style="color: #000000">我们移除所有因缺少包而导致错误的行，将 [IMetierLocal] 接口重命名为 [IMetier]（这是它在 Spring [business] 层中的名称），并使用 Spring 对其进行实例化：</span></p>
+<p><span style="color: #000000">我们移除所有因缺少包而报错的行，将 [IMetier]（这是它在 Spring 层 [métier] 中的名称）重命名为接口 [IMetierLocal]，并使用 Spring 对其进行实例化：</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> beans;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.ArrayList;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.List;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.ApplicationContext;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.support.ClassPathXmlApplicationContext;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> rdvmedecins.metier.service.IMetier;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Application {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// business layer</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 业务层</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IMetier metier;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// errors</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 错误</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Application() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// instantiation layer [business]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// 实例化 [métier] 层</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      ApplicationContext ctx = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ClassPathXmlApplicationContext(</span><span style="color:#2a00ff">&quot;spring-config-metier-dao.xml&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      metier = (IMetier) ctx.getBean(</span><span style="color:#2a00ff">&quot;metier&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (Throwable th) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// we note the error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// 记录错误</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      erreur = </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      erreurs.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Erreur(th.getClass().getName(), th.getMessage()));</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">while</span><span style="color:#000000"> (th.getCause() != </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">) {</span></span></span>
@@ -838,16 +821,16 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// getters</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 获取器</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Boolean getErreur() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> erreur;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> List&lt;Erreur&gt; getErreurs() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> erreurs;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> IMetier getMetier() {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> metier;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
@@ -855,42 +838,42 @@
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">第 20-21 行：从 Spring 配置文件中实例化 [business] 层。这是 [business] 层所使用的文件 [1]。我们将它复制到 Web 项目中 [2]：</span>
+  <li><span style="color: #000000">第 20-21 行：根据 Spring 配置文件实例化 [métier] 层。该配置文件即 [métier] 和 [1] 层所使用的配置文件。 我们将该文件复制到 Web 项目 [2] 中：</span>
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003420000014064DB3365.png" width="417" height="160" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003420000014064DB3365.png" width="417" height="160" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
 
 <ul>
-  <li><span style="color: #000000">第 22-31 行：我们处理任何异常，并将它们的堆栈跟踪存储在第 14 行的字段中。</span>
+  <li><span style="color: #000000">第 22-31 行：我们处理可能出现的异常，并将异常堆栈记录在第 14 行的字段中。</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">完成上述操作后，[Application] Bean 便不再存在任何错误。现在让我们来看 [Form] Bean [1]、[2]：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A0000002A4FC54EC56.png" width="592" height="338" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
+<p><span style="color: #000000">完成上述操作后，Bean [Application] 已无错误。现在我们来看 Bean [Form]、[1] 和 [2]：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004A0000002A4FC54EC56.png" width="592" height="338" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>3</b></div><img src="images/10000000000000D1000000A837612899.png" width="146" height="118" style="display:inline-block; margin:4px;width:3.87cm;height:3.112cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D1000000A837612899.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>4</b></div><img src="images/10000000000000C9000000B71BBC6695.png" width="141" height="128" style="display:inline-block; margin:4px;width:3.72cm;height:3.387cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000B71BBC6695.png" /></td></tr></table></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>3</b></div><img src="images/10000000000000D1000000A837612899.png" width="146" height="118" style="display:inline-block; margin:4px;width:3.87cm;height:3.112cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D1000000A837612899.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>4</b></div><img src="images/10000000000000C9000000B71BBC6695.png" width="141" height="128" style="display:inline-block; margin:4px;width:3.72cm;height:3.387cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000B71BBC6695.png" /></td></tr></table></td></tr></table>
 
-<p><span style="color: #000000">我们删除了所有因缺少包而导致的错误行（导入语句和注解），并将 [ImetierLocal] 接口重命名为 [IMetier]。这样就足以消除所有错误 [3]。</span></p>
-<p><span style="color: #000000">此外，我们还需要为该字段添加 getter 和 setter 方法 </span></p>
+<p><span style="color: #000000">由于缺少包，我们删除了所有出错的行（import 和注解），并将 [IMetier] 重命名为接口 [ImetierLocal]。这样就足以消除所有 [3] 的错误。</span></p>
+<p><span style="color: #000000">此外，需在 [Form] Bean 的代码中，为字段 </span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// bean Application</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// Application bean</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Application application;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">从 [Application] 和 [Form] Bean 中移除的部分注解，原本是将这些类声明为具有特定作用域的 Bean。现在，此配置在以下 [faces-config.xml] 文件中完成 [4]：</span></p>
+<p><span style="color: #000000">在 [Application] 和 [Form]  bean 中删除的某些注解，曾将类声明为具有特定作用域的 bean。 现在，此配置在以下文件中进行：</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;?&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- =========== FULL CONFIGURATION FILE ================================== --&gt;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;faces-config</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">version</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">2.0</span><span style="color:#800080">&quot;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://java.sun.com/xml/ns/javaee</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns:xsi</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.w3.org/2001/XMLSchema-instance</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xsi:schemaLocation</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd</span><span style="color:#800080">&quot;&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;application&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- message file --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- 消息文件 --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;resource-bundle&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;base-name&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        messages</span></span>
@@ -900,82 +883,82 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;message-bundle&gt;</span><span style="color:#000000">messages</span><span style="color:#800080">&lt;/message-bundle&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;default-render-kit-id&gt;</span><span style="color:#000000">PRIMEFACES_MOBILE</span><span style="color:#800080">&lt;/default-render-kit-id&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/application&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- the applicationBean bean --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- applicationBean Bean --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;managed-bean&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-name&gt;</span><span style="color:#000000">applicationBean</span><span style="color:#800080">&lt;/managed-bean-name&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-class&gt;</span><span style="color:#000000">beans.Application</span><span style="color:#800080">&lt;/managed-bean-class&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-scope&gt;</span><span style="color:#000000">application</span><span style="color:#800080">&lt;/managed-bean-scope&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/managed-bean&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- the bean form --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- 表单 Bean --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;managed-bean&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-name&gt;</span><span style="color:#000000">form</span><span style="color:#800080">&lt;/managed-bean-name&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-class&gt;</span><span style="color:#000000">beans.Form</span><span style="color:#800080">&lt;/managed-bean-class&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-scope&gt;</span><span style="color:#000000">session</span><span style="color:#800080">&lt;/managed-bean-scope&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-property&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;property-name&gt;</span><span style="color:#000000">application</span><span style="color:#800080">&lt;/property-name&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;value&gt;</span><span style="color:#000000">#{applicationBean}</span><span style="color:#800080">&lt;/value&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      &lt;value&gt;#{applicationBean}&lt;/value&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;/managed-property&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/managed-bean&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;/faces-config&gt;</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">端口配置已完成。我们可以尝试运行该 Web 应用程序。</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000173000002DF769E65A0.png" width="186" height="368" style="display:inline-block; margin:4px;width:4.911cm;height:9.73cm;" class="odt-zoomable" data-zoom-src="images/1000000000000173000002DF769E65A0.png" /></td></tr></table>
+<p><span style="color: #000000">移植工作已完成。我们可以尝试运行该 Web 应用程序。</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000173000002DF769E65A0.png" width="186" height="368" style="display:inline-block; margin:4px;width:4.911cm;height:9.73cm;" class="odt-zoomable" data-zoom-src="images/1000000000000173000002DF769E65A0.png" /></td></tr></table>
 
-<p><span style="color: #000000">具体测试这个新应用程序的任务就留给读者了。我们可以对其进行一些改进，以处理 [Application] Bean 初始化失败的情况。我们知道，在这种情况下，以下字段已经初始化：</span></p>
+<p><span style="color: #000000">我们将留给读者自行测试这个新应用程序。我们可以对其进行微调，以处理 [Application] Bean 初始化失败的情况。已知在此情况下，以下字段已被初始化：</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 错误</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">此情况可在 [Form] Bean 的 </span><em><span style="color: #000000">init</span></em><span style="color: #000000"> 方法中处理：</span></p>
+<p><span style="color: #000000">可以在 Bean [Form] 的 </span><em><span style="color: #000000">init</span></em><span style="color: #000000"> 方法中预先处理这种情况：</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">PostConstruct</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> init() {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// was the initialization successful?</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// 初始化是否成功？</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">if</span><span style="color:#000000"> (application.getErreur()) {</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// retrieve the list of errors</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// 获取错误列表</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      erreurs = application.getErreurs();</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// the error view is displayed</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// 显示错误视图</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      setForms(</span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// caching doctors and customers</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// 将医生和客户数据缓存</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    ...</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 </code></pre></div>
 
 <ul>
-  <li><span style="color: #000000">第 5 行：如果 [Application] Bean 初始化失败，</span>
+  <li><span style="color: #000000">第 5 行：如果 Bean [Application] 初始化失败，</span>
   </li>
-  <li><span style="color: #000000">第 7 行：检索错误列表，</span>
+  <li><span style="color: #000000">第7行：获取错误列表，</span>
   </li>
   <li><span style="color: #000000">第 9 行：并显示错误页面。</span>
   </li>
 </ul>
 
-<p><span style="color: #000000">因此，如果我们停止 MySQL 数据库管理系统并重启应用程序，现在会看到以下页面：</span></p>
+<p><span style="color: #000000">因此，如果停止 SGBD 和 MySQL，然后重新启动应用程序，现在将显示以下页面：</span></p>
 <p><img src="images/100000000000016B000002EB7C2C41F1.png" width="254" height="523" style="width:6.72cm;height:13.829cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016B000002EB7C2C41F1.png" /></p>
-<p><a id="refheading105127100051761"></a></p>
+<p><span id="refheading105127100051761" name="refheading105127100051761" class="odt-bookmark-anchor"></span></p>
 <h2 id="102">10.2. <span style="color: #4f81bd">结论</span></h2>
-<p><span style="color: #000000">将 PrimeFaces Mobile/EJB/GlassFish 应用程序移植到 PrimeFaces Mobile/Spring/Tomcat 环境中，过程十分简单。在 JSF/Spring/Tomcat 应用程序研究中报告的内存泄漏问题（</span><a href="#fuite-memoire-tomcat"><u><span style="color: #0563c1">第 4.3.5 节</span></u></a><span style="color: #000000">）仍然存在。该问题将采用相同的方式予以解决。</span></p>
-<p><a id="refheading105129100051761"></a></p>
-<h2 id="103-eclipse">10.3. <span style="color: #4f81bd"><span style="color: #4f81bd">基于 Eclipse 的测试</span></span></h2>
+<p><span style="color: #000000">将 Primefaces mobile/EJB/Glassfish 应用程序迁移至 Primefaces mobile/Spring/Tomcat 环境的过程十分简单。 在 JSF / Spring / Tomcat 应用程序研究中报告的内存泄漏问题（</span><a href="hiiingonghengu---02rdvmedecins-jsf2-spring.html#fuite-memoire-tomcat"><u><span style="color: #0563c1">第 4.3.5</span></u></a><span style="color: #000000"> 节）仍然存在。我们将采用相同的方法解决该问题。</span></p>
+<p><span id="refheading105129100051761" name="refheading105129100051761" class="odt-bookmark-anchor"></span></p>
+<h2 id="103-eclipse">10.3. <span style="color: #4f81bd">使用 Eclipse 进行测试</span></h2>
 <p><span style="color: #000000">我们将 Maven 项目导入 Eclipse [1]：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005080000011B990B062E.png" width="644" height="142" style="display:inline-block; margin:4px;width:17.039cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000005080000011B990B062E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005080000011B990B062E.png" width="644" height="142" style="display:inline-block; margin:4px;width:17.039cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000005080000011B990B062E.png" /></td></tr></table>
 
-<p><span style="color: #000000">运行 Web 项目 [2]。</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000504000001923996856D.png" width="642" height="201" style="display:inline-block; margin:4px;width:16.986cm;height:5.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000504000001923996856D.png" /></td></tr></table>
+<p><span style="color: #000000">我们运行 Web 项目 [2]。</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000504000001923996856D.png" width="642" height="201" style="display:inline-block; margin:4px;width:16.986cm;height:5.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000504000001923996856D.png" /></td></tr></table>
 
 <p><span style="color: #000000">我们选择 Tomcat 服务器 [3]。随后，应用程序的首页将在 Eclipse 的内置浏览器中显示 [4]。</span></p>
-<p><a id="refheading6290511854047529"></a></p>
-<h2 id="104">10.4. <span style="color: #4f81bd">在移动设备上进行测试</span></h2>
-<p><span style="color: #000000">要在移动设备上测试应用程序，请按照</span><a href="#tests-avec-vrai-smartphone"><u><span style="color: #0563c1">第8.5.6节</span></u></a><span style="color: #000000">中概述的步骤操作。以下是该应用程序的一些屏幕截图：</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059B0000097C3912D09A.jpg" width="287" height="485" style="display:inline-block; margin:4px;width:7.59cm;height:12.843cm;" class="odt-zoomable" data-zoom-src="images/100000000000059B0000097C3912D09A.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005D40000097B0617DC08.jpg" width="299" height="486" style="display:inline-block; margin:4px;width:7.9cm;height:12.852cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D40000097B0617DC08.jpg" /></td></tr></table>
+<p><span id="refheading6290511854047529" name="refheading6290511854047529" class="odt-bookmark-anchor"></span></p>
+<h2 id="104">10.4. <span style="color: #4f81bd">移动端测试</span></h2>
+<p><span style="color: #000000">要在移动设备上测试应用程序，请按照第</span><a href="primefaces-mobile-ianie.html#tests-avec-vrai-smartphone"><u><span style="color: #0563c1"> 8.5.6</span></u></a><span style="color: #000000"> 节中的说明进行操作。以下是应用程序的截图：</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000059B0000097C3912D09A.jpg" width="287" height="485" style="display:inline-block; margin:4px;width:7.59cm;height:12.843cm;" class="odt-zoomable" data-zoom-src="images/100000000000059B0000097C3912D09A.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005D40000097B0617DC08.jpg" width="299" height="486" style="display:inline-block; margin:4px;width:7.9cm;height:12.852cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D40000097B0617DC08.jpg" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000607000009B4A299E3EF.jpg" width="309" height="497" style="display:inline-block; margin:4px;width:8.17cm;height:13.152cm;" class="odt-zoomable" data-zoom-src="images/1000000000000607000009B4A299E3EF.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005B0000009757E64FA99.jpg" width="291" height="484" style="display:inline-block; margin:4px;width:7.699cm;height:12.802cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B0000009757E64FA99.jpg" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000607000009B4A299E3EF.jpg" width="309" height="497" style="display:inline-block; margin:4px;width:8.17cm;height:13.152cm;" class="odt-zoomable" data-zoom-src="images/1000000000000607000009B4A299E3EF.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005B0000009757E64FA99.jpg" width="291" height="484" style="display:inline-block; margin:4px;width:7.699cm;height:12.802cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B0000009757E64FA99.jpg" /></td></tr></table>
 
 
 
